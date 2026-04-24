@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#F5F1EA" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0E1520" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+
+    <title>Billederapport — Fotorapporter fra byggepladser, offline-klar</title>
+    <meta
+      name="description"
+      content="Lav professionelle fotorapporter direkte fra byggepladsen. Tag billeder, tilføj noter og send en færdig PDF-rapport til kunden. Virker offline. Dansk-udviklet og GDPR-venlig."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="da_DK" />
+    <meta property="og:title" content="Billederapport — Fotorapporter fra byggepladser" />
+    <meta
+      property="og:description"
+      content="Tag billeder, tilføj noter og send en færdig PDF-rapport til kunden. Offline-klar og mobil-først."
+    />
+    <meta property="og:image" content="/assets/logo/app-icon-1024.png" />
+    <meta property="og:url" content="https://billederapport.dk/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/svg+xml" href="/assets/logo/logo-color.svg" media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/svg+xml" href="/assets/logo/logo-dark.svg" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/logo/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+
+    <link rel="canonical" href="https://billederapport.dk/" />
+
+    <link rel="preconnect" href="https://rsms.me/" crossorigin />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Spring til indhold</a>
+
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="/" aria-label="Billederapport — forside">
+          <img
+            src="/assets/logo/logo-color.svg"
+            alt=""
+            width="36"
+            height="36"
+            class="brand-mark brand-mark-light"
+          />
+          <img
+            src="/assets/logo/logo-dark.svg"
+            alt=""
+            width="36"
+            height="36"
+            class="brand-mark brand-mark-dark"
+          />
+          <span class="brand-name">Billederapport</span>
+        </a>
+
+        <nav aria-label="Hovedmenu" class="nav-links">
+          <a href="#features">Funktioner</a>
+          <a href="#how">Sådan virker det</a>
+          <a href="#pricing">Priser</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="link" href="https://app.billederapport.dk/login">Log ind</a>
+          <a class="btn btn-primary" href="https://app.billederapport.dk">Åbn app →</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Dansk-udviklet · Offline-klar · GDPR i EU</p>
+            <h1>
+              Fotorapporter fra byggepladsen —
+              <span class="accent">færdige på telefonen.</span>
+            </h1>
+            <p class="lede">
+              Tag billeder, svar på spørgsmål, tilføj pile og noter, og send en
+              pæn PDF-rapport til kunden på få minutter. Også når der ikke er
+              dækning.
+            </p>
+
+            <div class="cta-row">
+              <a class="btn btn-primary btn-lg" href="https://app.billederapport.dk/signup">
+                Prøv gratis i 14 dage
+              </a>
+              <a class="btn btn-ghost btn-lg" href="https://app.billederapport.dk">
+                Åbn appen
+              </a>
+            </div>
+
+            <ul class="trust-points" aria-label="Fordele">
+              <li>
+                <svg aria-hidden="true" viewBox="0 0 20 20" width="18" height="18">
+                  <path
+                    d="M4 10.5l4 4 8-9"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Ingen installation — åbn direkte i browseren
+              </li>
+              <li>
+                <svg aria-hidden="true" viewBox="0 0 20 20" width="18" height="18">
+                  <path
+                    d="M4 10.5l4 4 8-9"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Virker uden dækning — synkroniseres senere
+              </li>
+              <li>
+                <svg aria-hidden="true" viewBox="0 0 20 20" width="18" height="18">
+                  <path
+                    d="M4 10.5l4 4 8-9"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Dine data hostes i EU
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="phone">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="mock-header">
+                  <span class="mock-dot"></span>
+                  <span class="mock-title">Ny rapport</span>
+                  <span class="mock-badge">Kladde</span>
+                </div>
+                <div class="mock-section-title">Kunde</div>
+                <div class="mock-row">
+                  <span class="mock-label">Navn</span>
+                  <span class="mock-value">Andersen Byg A/S</span>
+                </div>
+                <div class="mock-row">
+                  <span class="mock-label">Adresse</span>
+                  <span class="mock-value">Hovedgaden 12, 8000 Aarhus</span>
+                </div>
+
+                <div class="mock-section-title">Spørgsmål</div>
+                <div class="mock-q">
+                  <span class="mock-q-text">Er taget tæt?</span>
+                  <span class="mock-pill pill-ok">Ja</span>
+                </div>
+                <div class="mock-q">
+                  <span class="mock-q-text">Mangler der fuger?</span>
+                  <span class="mock-pill pill-no">Nej</span>
+                </div>
+
+                <div class="mock-photo">
+                  <div class="photo-anno photo-anno-circle"></div>
+                  <div class="photo-anno photo-anno-arrow">
+                    <svg viewBox="0 0 60 60" width="60" height="60" aria-hidden="true">
+                      <path
+                        d="M6 54 L48 12"
+                        stroke="#E8833A"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                        fill="none"
+                      />
+                      <path
+                        d="M48 12 L36 14 M48 12 L46 24"
+                        stroke="#E8833A"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                        fill="none"
+                      />
+                    </svg>
+                  </div>
+                  <span class="photo-timestamp">24-04-2026 · 10:32</span>
+                </div>
+
+                <button class="mock-cta">Afslut og send PDF</button>
+              </div>
+            </div>
+
+            <div class="hero-card">
+              <div class="hero-card-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                  <path
+                    d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14 3v5h5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div>
+                <div class="hero-card-title">PDF sendt til kunden</div>
+                <div class="hero-card-sub">andersen@byg.dk · kl. 10:34</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LOGO STRIP / SOCIAL PROOF -->
+      <section class="strip" aria-label="Bygget til">
+        <div class="container strip-inner">
+          <span class="strip-text">Bygget til håndværkere, inspektører og rådgivere</span>
+          <ul class="strip-icons">
+            <li>🏗️ Tømrere</li>
+            <li>🔧 VVS</li>
+            <li>🏠 Ejendomsinspektion</li>
+            <li>🛠️ Skadeservice</li>
+            <li>🪜 Tagentreprenører</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section id="features" class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Funktioner</p>
+            <h2>Alt du skal bruge — intet du ikke skal bruge.</h2>
+            <p class="section-lede">
+              Lavet sammen med danske håndværkere. Ingen CRM-bloat, ingen
+              træningsweekender. Bare fotorapporter der er færdige inden du
+              forlader pladsen.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                  <path
+                    d="M4 8a2 2 0 0 1 2-2h2.5l1.5-2h4l1.5 2H18a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                  <circle cx="12" cy="12.5" r="3.5" fill="none" stroke="currentColor" stroke-width="1.6" />
+                </svg>
+              </div>
+              <h3>Foto med annotering</h3>
+              <p>
+                Tag billeder direkte fra telefonen. Tegn cirkler, pile og tekst
+                oven på — og tidsstemplet brændes ind i billedet.
+              </p>
+            </article>
+
+            <article class="feature">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                  <path
+                    d="M5 17a4 4 0 0 1 .6-7.96A6 6 0 0 1 18 9a4 4 0 0 1 .5 7.94"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M12 12v8m0 0-3-3m3 3 3-3"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3>Offline-klar</h3>
+              <p>
+                Kælder uden dækning? Ingen panik. Alt gemmes lokalt og
+                synkroniseres automatisk når du er online igen.
+              </p>
+            </article>
+
+            <article class="feature">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                  <path
+                    d="M4 6h16M4 12h16M4 18h10"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3>Egne skabeloner</h3>
+              <p>
+                Byg dine egne tjeklister — én gang. Så har alle på holdet den
+                samme, ensartede rapport hver gang.
+              </p>
+            </article>
+
+            <article class="feature">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                  <path
+                    d="M4 7h16v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M4 7l8 6 8-6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3>PDF direkte til kunden</h3>
+              <p>
+                Afslut rapporten og få en pæn, branded PDF sendt på mail — med
+                dit firmanavn, logo og farver.
+              </p>
+            </article>
+
+            <article class="feature">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                  <circle cx="9" cy="8" r="3.5" fill="none" stroke="currentColor" stroke-width="1.6" />
+                  <path
+                    d="M3 20a6 6 0 0 1 12 0"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                  />
+                  <circle cx="17" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6" />
+                  <path
+                    d="M14 18.5a4.5 4.5 0 0 1 7 0"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3>Hele holdet</h3>
+              <p>
+                Inviter dine kolleger, styr rettigheder, og hold alle rapporter
+                samlet ét sted — pr. firma.
+              </p>
+            </article>
+
+            <article class="feature">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                  <path
+                    d="M12 3 4 6v6c0 4.5 3.2 8.4 8 9 4.8-.6 8-4.5 8-9V6l-8-3Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9 12.5l2.2 2.2L15.5 10"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3>GDPR og EU-hosting</h3>
+              <p>
+                Dine data og billeder opbevares i EU. Du kan eksportere eller
+                slette det hele med ét klik.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section id="how" class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Sådan virker det</p>
+            <h2>Fra ankomst til afsendt rapport — på én kop kaffe.</h2>
+          </div>
+
+          <ol class="steps">
+            <li class="step">
+              <div class="step-num">1</div>
+              <h3>Vælg kunde og skabelon</h3>
+              <p>
+                Åbn appen på telefonen, vælg kunden, og start en ny rapport ud
+                fra din egen skabelon.
+              </p>
+            </li>
+            <li class="step">
+              <div class="step-num">2</div>
+              <h3>Gå i gang på pladsen</h3>
+              <p>
+                Svar på spørgsmålene, tag billeder, og markér det vigtige med
+                pile og cirkler. Alt gemmes lokalt.
+              </p>
+            </li>
+            <li class="step">
+              <div class="step-num">3</div>
+              <h3>Afslut og send</h3>
+              <p>
+                Tryk "Afslut". Appen laver en PDF med dit logo og sender den til
+                kunden. Arkiveret og klar.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- WHY -->
+      <section class="section">
+        <div class="container why-grid">
+          <div class="why-copy">
+            <p class="eyebrow">Hvorfor Billederapport</p>
+            <h2>Fordi du skal ud til næste opgave — ikke bruge aftenen på rapporter.</h2>
+            <p class="section-lede">
+              Vi har bygget Billederapport sammen med folk der faktisk står på
+              pladsen. Derfor er det først og fremmest en mobil-app — ikke en
+              desktop-ting man også kan bruge på telefonen.
+            </p>
+
+            <ul class="why-list">
+              <li>
+                <strong>Mobil-først.</strong> Designet til store handsker, kolde
+                fingre og skarpt sollys.
+              </li>
+              <li>
+                <strong>Ingen app-store.</strong> Kør den i browseren eller
+                installer den som app med ét tryk.
+              </li>
+              <li>
+                <strong>Din branding.</strong> Logo, farver og kontaktoplysninger
+                gennem hele rapporten.
+              </li>
+              <li>
+                <strong>Dansk sprog og dansk support.</strong> Vi svarer på
+                dansk, og prisen er i DKK.
+              </li>
+            </ul>
+          </div>
+
+          <aside class="quote-card">
+            <svg class="quote-mark" aria-hidden="true" viewBox="0 0 40 40" width="40" height="40">
+              <path
+                d="M14 10c-4 2-7 6-7 11v9h10V20h-6c0-3 2-6 5-7l-2-3Zm16 0c-4 2-7 6-7 11v9h10V20h-6c0-3 2-6 5-7l-2-3Z"
+                fill="currentColor"
+              />
+            </svg>
+            <blockquote>
+              "Før brugte jeg en time om aftenen på at samle billeder og skrive
+              rapporter i Word. Nu er de færdige inden jeg sætter mig i bilen."
+            </blockquote>
+            <figcaption>
+              <strong>Michael</strong> · Tagentreprenør, Jylland
+            </figcaption>
+          </aside>
+        </div>
+      </section>
+
+      <!-- PRICING TEASER -->
+      <section id="pricing" class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Priser</p>
+            <h2>Gratis i 14 dage. Ingen kortoplysninger.</h2>
+            <p class="section-lede">
+              Prøv hele appen uden forpligtelser. Efter prøveperioden vælger du
+              den plan der passer til dit firma.
+            </p>
+          </div>
+
+          <div class="plans">
+            <article class="plan">
+              <h3 class="plan-name">Standard</h3>
+              <p class="plan-price">
+                <span class="plan-amount">199</span>
+                <span class="plan-unit">kr / bruger / md</span>
+              </p>
+              <ul class="plan-list">
+                <li>Ubegrænset antal rapporter</li>
+                <li>Ubegrænset fotolagring</li>
+                <li>Egne skabeloner</li>
+                <li>Branding med logo og farver</li>
+                <li>Offline-tilstand</li>
+              </ul>
+              <a class="btn btn-primary btn-block" href="https://app.billederapport.dk/signup">
+                Start 14 dages prøve
+              </a>
+              <p class="plan-foot">Priser ekskl. moms. Opsig når du vil.</p>
+            </article>
+
+            <article class="plan plan-featured">
+              <div class="plan-badge">Populær</div>
+              <h3 class="plan-name">Pro</h3>
+              <p class="plan-price">
+                <span class="plan-amount">349</span>
+                <span class="plan-unit">kr / bruger / md</span>
+              </p>
+              <ul class="plan-list">
+                <li>Alt i Standard</li>
+                <li>Brugerdefinerede felter</li>
+                <li>CSV-eksport</li>
+                <li>API-adgang</li>
+                <li>Prioriteret support</li>
+              </ul>
+              <a class="btn btn-primary btn-block" href="https://app.billederapport.dk/signup">
+                Start 14 dages prøve
+              </a>
+              <p class="plan-foot">Priser ekskl. moms. Opsig når du vil.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta">
+        <div class="container cta-inner">
+          <h2>Klar til at få rapporterne fra hånden?</h2>
+          <p>
+            Det tager under et minut at komme i gang. Ingen installation, ingen
+            lange formularer.
+          </p>
+          <div class="cta-row cta-row-centered">
+            <a class="btn btn-primary btn-lg" href="https://app.billederapport.dk/signup">
+              Opret konto gratis
+            </a>
+            <a class="btn btn-ghost btn-lg" href="https://app.billederapport.dk">
+              Åbn app.billederapport.dk →
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="/" aria-label="Billederapport">
+            <img
+              src="/assets/logo/logo-color.svg"
+              alt=""
+              width="28"
+              height="28"
+              class="brand-mark brand-mark-light"
+            />
+            <img
+              src="/assets/logo/logo-dark.svg"
+              alt=""
+              width="28"
+              height="28"
+              class="brand-mark brand-mark-dark"
+            />
+            <span class="brand-name">Billederapport</span>
+          </a>
+          <p class="footer-tag">
+            Fotorapporter fra byggepladser — offline-klar og nem at dele.
+          </p>
+        </div>
+
+        <nav class="footer-col" aria-label="App">
+          <h4>App</h4>
+          <a href="https://app.billederapport.dk">Åbn app</a>
+          <a href="https://app.billederapport.dk/login">Log ind</a>
+          <a href="https://app.billederapport.dk/signup">Opret konto</a>
+        </nav>
+
+        <nav class="footer-col" aria-label="Produkt">
+          <h4>Produkt</h4>
+          <a href="#features">Funktioner</a>
+          <a href="#how">Sådan virker det</a>
+          <a href="#pricing">Priser</a>
+        </nav>
+
+        <nav class="footer-col" aria-label="Kontakt">
+          <h4>Kontakt</h4>
+          <a href="mailto:hej@billederapport.dk">hej@billederapport.dk</a>
+        </nav>
+      </div>
+
+      <div class="container footer-bottom">
+        <span>© <span id="year">2026</span> Billederapport. Alle rettigheder forbeholdes.</span>
+        <span>Hostet i EU · GDPR-venlig</span>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
