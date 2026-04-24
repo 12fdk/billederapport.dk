@@ -20,13 +20,16 @@
       property="og:description"
       content="Tag billeder, tilføj noter og send en færdig PDF-rapport til kunden. Offline-klar og mobil-først."
     />
-    <meta property="og:image" content="/assets/logo/app-icon-1024.png" />
+    <meta property="og:image" content="https://billederapport.dk/assets/og/og-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:url" content="https://billederapport.dk/" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://billederapport.dk/assets/og/og-card.png" />
 
+    <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/svg+xml" href="/assets/logo/logo-color.svg" media="(prefers-color-scheme: light)" />
     <link rel="icon" type="image/svg+xml" href="/assets/logo/logo-dark.svg" media="(prefers-color-scheme: dark)" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/logo/favicon-32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
 
     <link rel="canonical" href="https://billederapport.dk/" />
@@ -66,7 +69,7 @@
 
         <div class="nav-actions">
           <a class="link" href="https://app.billederapport.dk/login">Log ind</a>
-          <a class="btn btn-primary" href="https://app.billederapport.dk">Åbn app →</a>
+          <a class="btn btn-primary" href="https://app.billederapport.dk" target="_blank" rel="noopener">Åbn app →</a>
         </div>
       </div>
     </header>
@@ -91,7 +94,7 @@
               <a class="btn btn-primary btn-lg" href="https://app.billederapport.dk/signup">
                 Prøv gratis i 14 dage
               </a>
-              <a class="btn btn-ghost btn-lg" href="https://app.billederapport.dk">
+              <a class="btn btn-ghost btn-lg" href="https://app.billederapport.dk" target="_blank" rel="noopener">
                 Åbn appen
               </a>
             </div>
@@ -151,11 +154,11 @@
                 <div class="mock-section-title">Kunde</div>
                 <div class="mock-row">
                   <span class="mock-label">Navn</span>
-                  <span class="mock-value">Andersen Byg A/S</span>
+                  <span class="mock-value">Eksempel Service ApS</span>
                 </div>
                 <div class="mock-row">
                   <span class="mock-label">Adresse</span>
-                  <span class="mock-value">Hovedgaden 12, 8000 Aarhus</span>
+                  <span class="mock-value">Testvej 1, 8000 Aarhus</span>
                 </div>
 
                 <div class="mock-section-title">Spørgsmål</div>
@@ -216,7 +219,7 @@
               </div>
               <div>
                 <div class="hero-card-title">PDF sendt til kunden</div>
-                <div class="hero-card-sub">andersen@byg.dk · kl. 10:34</div>
+                <div class="hero-card-sub">kunde@eksempel.dk · kl. 10:34</div>
               </div>
             </div>
           </div>
@@ -228,11 +231,132 @@
         <div class="container strip-inner">
           <span class="strip-text">Bruges til alle slags inspektioner og dokumentation</span>
           <ul class="strip-icons">
-            <li>🏠 Ejendom</li>
-            <li>🚗 Skader & forsikring</li>
-            <li>🏗️ Byggeri</li>
-            <li>🛠️ Service & vedligehold</li>
-            <li>📋 Rådgivning & tilsyn</li>
+            <li>
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                <path
+                  d="M4 11 12 4l8 7"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M6 10v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-9"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10 20v-5h4v5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Ejendom
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                <path
+                  d="M12 3 4 6v6c0 4.5 3.2 8.4 8 9 4.8-.6 8-4.5 8-9V6l-8-3Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9 12.5l2.2 2.2L15.5 10"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Skader &amp; forsikring
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                <path
+                  d="M4 14c1.5-5 4.5-8 8-8s6.5 3 8 8"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3 14h18v3H3z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 6v8"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                />
+              </svg>
+              Byggeri
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                <path
+                  d="M14.7 6.3a4 4 0 0 1 5 5l-2.6-.7-1.7 1.7.7 2.6a4 4 0 0 1-5-5l2.6.7 1.7-1.7-.7-2.6Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="m13.4 13.4-7 7a1.8 1.8 0 0 1-2.5-2.5l7-7"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Service &amp; vedligehold
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                <rect
+                  x="5"
+                  y="4"
+                  width="14"
+                  height="17"
+                  rx="2"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                />
+                <path
+                  d="M9 3h6v3H9z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="m9 13 2.2 2.2L15.5 11"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Rådgivning &amp; tilsyn
+            </li>
           </ul>
         </div>
       </section>
@@ -538,7 +662,7 @@
             <a class="btn btn-primary btn-lg" href="https://app.billederapport.dk/signup">
               Opret konto gratis
             </a>
-            <a class="btn btn-ghost btn-lg" href="https://app.billederapport.dk">
+            <a class="btn btn-ghost btn-lg" href="https://app.billederapport.dk" target="_blank" rel="noopener">
               Åbn app.billederapport.dk →
             </a>
           </div>
@@ -573,7 +697,7 @@
 
         <nav class="footer-col" aria-label="App">
           <h4>App</h4>
-          <a href="https://app.billederapport.dk">Åbn app</a>
+          <a href="https://app.billederapport.dk" target="_blank" rel="noopener">Åbn app</a>
           <a href="https://app.billederapport.dk/login">Log ind</a>
           <a href="https://app.billederapport.dk/signup">Opret konto</a>
         </nav>

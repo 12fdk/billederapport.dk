@@ -1,0 +1,9 @@
+# Claude Code per-user project settings
+.claude/settings.local.json
+
+# Editor/OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
