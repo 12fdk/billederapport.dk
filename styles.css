@@ -637,6 +637,18 @@ button {
   margin-top: 1px;
 }
 
+@media (max-width: 899px) {
+  .hero-card {
+    position: static;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    transform: none;
+    margin: 1.25rem auto 0;
+    max-width: 340px;
+  }
+}
+
 @media (max-width: 480px) {
   .hero-visual {
     max-width: 300px;
@@ -645,12 +657,6 @@ button {
     transform: none;
   }
   .hero-card {
-    position: static;
-    left: auto;
-    right: auto;
-    bottom: auto;
-    transform: none;
-    margin: 1.25rem auto 0;
     max-width: 100%;
   }
 }
