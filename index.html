@@ -33,10 +33,170 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
 
     <link rel="canonical" href="https://billederapport.dk/" />
+    <link rel="alternate" hreflang="da-DK" href="https://billederapport.dk/" />
+    <link rel="alternate" hreflang="x-default" href="https://billederapport.dk/" />
+
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="author" content="Billederapport" />
+    <meta name="publisher" content="Billederapport" />
+    <meta name="geo.region" content="DK" />
+    <meta name="geo.placename" content="Denmark" />
+    <meta name="language" content="Danish" />
+    <meta name="keywords" content="fotorapport, fotorapport app, skadesrapport, inspektionsrapport, tilsynsrapport, fotodokumentation, byggetilsyn, mobil rapport, PDF rapport, håndværker app, GDPR, offline" />
+
+    <meta property="og:site_name" content="Billederapport" />
+    <meta property="og:image:alt" content="Billederapport — fotorapport på telefonen med branded PDF" />
+    <meta property="og:image:type" content="image/png" />
+    <meta name="twitter:title" content="Billederapport — Fotorapporter direkte på telefonen" />
+    <meta name="twitter:description" content="Tag billeder, tilføj noter og send en færdig PDF-rapport til kunden. Offline-klar og mobil-først." />
+    <meta name="twitter:image:alt" content="Billederapport — fotorapport på telefonen med branded PDF" />
+
+    <meta name="apple-mobile-web-app-title" content="Billederapport" />
+    <meta name="application-name" content="Billederapport" />
 
     <link rel="preconnect" href="https://rsms.me/" crossorigin />
+    <link rel="preload" as="style" href="https://rsms.me/inter/inter.css" />
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link rel="dns-prefetch" href="https://app.billederapport.dk" />
+    <link rel="preconnect" href="https://app.billederapport.dk" />
+    <link rel="dns-prefetch" href="https://umami.robert-jensen.dk" />
     <link rel="stylesheet" href="/styles.css" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://billederapport.dk/#organization",
+          "name": "Billederapport",
+          "url": "https://billederapport.dk/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://billederapport.dk/assets/logo/logo-color.svg",
+            "width": 512,
+            "height": 512
+          },
+          "image": "https://billederapport.dk/assets/og/og-card.png",
+          "description": "Dansk-udviklet mobil app til fotorapporter, inspektioner og skadesdokumentation. Offline-klar, GDPR-venlig og hostet i EU.",
+          "areaServed": { "@type": "Country", "name": "DK" },
+          "sameAs": []
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://billederapport.dk/#website",
+          "url": "https://billederapport.dk/",
+          "name": "Billederapport",
+          "inLanguage": "da-DK",
+          "publisher": { "@id": "https://billederapport.dk/#organization" }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://billederapport.dk/#app",
+          "name": "Billederapport",
+          "operatingSystem": "Web, iOS, Android (PWA)",
+          "applicationCategory": "BusinessApplication",
+          "applicationSubCategory": "FieldServiceManagement",
+          "url": "https://app.billederapport.dk",
+          "downloadUrl": "https://app.billederapport.dk",
+          "softwareVersion": "1.0",
+          "inLanguage": "da-DK",
+          "browserRequirements": "Requires modern browser with JavaScript enabled. Works offline as a PWA.",
+          "publisher": { "@id": "https://billederapport.dk/#organization" },
+          "featureList": [
+            "Foto med annotering (cirkler, pile, tekst, tidsstempel)",
+            "Offline-tilstand med automatisk synkronisering",
+            "Egne tjeklister og skabeloner",
+            "Branded PDF-rapport på mail til kunden",
+            "Team og rettighedsstyring",
+            "GDPR og EU-hosting"
+          ],
+          "offers": {
+            "@type": "Offer",
+            "price": "199",
+            "priceCurrency": "DKK",
+            "category": "subscription",
+            "availability": "https://schema.org/InStock",
+            "url": "https://app.billederapport.dk/signup",
+            "eligibleRegion": { "@type": "Country", "name": "DK" },
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "199",
+              "priceCurrency": "DKK",
+              "unitCode": "MON",
+              "referenceQuantity": {
+                "@type": "QuantitativeValue",
+                "value": 1,
+                "unitCode": "MON"
+              }
+            }
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://billederapport.dk/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Hvad er Billederapport?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Billederapport er en dansk mobil-app til at lave fotorapporter på stedet — til inspektioner, skadesdokumentation, byggetilsyn og service. Du tager billeder med telefonen, tilføjer noter og sender en færdig PDF-rapport til kunden, mens du stadig står på stedet. Appen kører i browseren som PWA, så der er ingen installation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Virker Billederapport uden internet?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja. Billederapport er bygget offline-først, så du kan tage billeder, udfylde tjeklister og skrive noter helt uden dækning. Når telefonen er online igen, synkroniseres alt automatisk, og PDF-rapporten kan sendes til kunden."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Hvor meget koster Billederapport?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Billederapport koster 199 kr/md ekskl. moms — én pris med ubegrænset antal rapporter, fotos, skabeloner og kunder. Der er 14 dages gratis prøve uden kreditkort, og du kan opsige når som helst."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Hvem bruger Billederapport?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Billederapport bruges af håndværkere, inspektører, bygningssagkyndige, ejendomsadministratorer, skadesservice og rådgivende tilsynsfolk i Danmark. Det er især lavet til selvstændige og små teams, der laver fotorapporter eller skadesrapporter på telefonen som en del af deres daglige arbejde."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Er Billederapport GDPR-venlig?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja. Alle data og billeder hostes i EU, og Billederapport er bygget efter GDPR. Du kan til enhver tid eksportere eller slette alle data fra din konto med ét klik, og der indgås databehandleraftale ved oprettelse af firma-konto."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Skal jeg installere en app fra App Store eller Google Play?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nej. Billederapport er en progressive web app (PWA), som kører direkte i browseren på app.billederapport.dk. Du kan tilføje den til hjemmeskærmen med ét tryk, så den fungerer præcis som en almindelig app — uden app-store, uden opdateringer at huske."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Kan jeg sende rapporten med mit eget logo og firmanavn?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja. PDF-rapporten brander automatisk med dit logo, dine farver og dine kontaktoplysninger, så kunden modtager en professionel rapport, der ligner den kommer fra dit firma — ikke fra Billederapport."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Spring til indhold</a>
@@ -65,6 +225,7 @@
           <a href="#features">Funktioner</a>
           <a href="#how">Sådan virker det</a>
           <a href="#pricing">Pris</a>
+          <a href="#faq">FAQ</a>
         </nav>
 
         <div class="nav-actions">
@@ -650,6 +811,102 @@
         </div>
       </section>
 
+      <!-- FAQ -->
+      <section id="faq" class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Spørgsmål &amp; svar</p>
+            <h2>Det folk plejer at spørge om.</h2>
+          </div>
+
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>
+                <span class="faq-q">Hvad er Billederapport?</span>
+                <svg class="faq-chev" aria-hidden="true" viewBox="0 0 20 20" width="20" height="20">
+                  <path d="M5 8l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </summary>
+              <p>
+                Billederapport er en dansk mobil-app til at lave fotorapporter på stedet — til inspektioner, skadesdokumentation, byggetilsyn og service. Du tager billeder med telefonen, tilføjer noter og sender en færdig PDF-rapport til kunden, mens du stadig står på stedet. Appen kører i browseren som PWA, så der er ingen installation.
+              </p>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span class="faq-q">Virker Billederapport uden internet?</span>
+                <svg class="faq-chev" aria-hidden="true" viewBox="0 0 20 20" width="20" height="20">
+                  <path d="M5 8l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </summary>
+              <p>
+                Ja. Billederapport er bygget offline-først, så du kan tage billeder, udfylde tjeklister og skrive noter helt uden dækning. Når telefonen er online igen, synkroniseres alt automatisk, og PDF-rapporten kan sendes til kunden.
+              </p>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span class="faq-q">Hvor meget koster Billederapport?</span>
+                <svg class="faq-chev" aria-hidden="true" viewBox="0 0 20 20" width="20" height="20">
+                  <path d="M5 8l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </summary>
+              <p>
+                Billederapport koster 199 kr/md ekskl. moms — én pris med ubegrænset antal rapporter, fotos, skabeloner og kunder. Der er 14 dages gratis prøve uden kreditkort, og du kan opsige når som helst.
+              </p>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span class="faq-q">Hvem bruger Billederapport?</span>
+                <svg class="faq-chev" aria-hidden="true" viewBox="0 0 20 20" width="20" height="20">
+                  <path d="M5 8l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </summary>
+              <p>
+                Billederapport bruges af håndværkere, inspektører, bygningssagkyndige, ejendomsadministratorer, skadesservice og rådgivende tilsynsfolk i Danmark. Det er især lavet til selvstændige og små teams, der laver fotorapporter eller skadesrapporter på telefonen som en del af deres daglige arbejde.
+              </p>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span class="faq-q">Er Billederapport GDPR-venlig?</span>
+                <svg class="faq-chev" aria-hidden="true" viewBox="0 0 20 20" width="20" height="20">
+                  <path d="M5 8l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </summary>
+              <p>
+                Ja. Alle data og billeder hostes i EU, og Billederapport er bygget efter GDPR. Du kan til enhver tid eksportere eller slette alle data fra din konto med ét klik, og der indgås databehandleraftale ved oprettelse af firma-konto.
+              </p>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span class="faq-q">Skal jeg installere en app fra App Store eller Google Play?</span>
+                <svg class="faq-chev" aria-hidden="true" viewBox="0 0 20 20" width="20" height="20">
+                  <path d="M5 8l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </summary>
+              <p>
+                Nej. Billederapport er en progressive web app (PWA), som kører direkte i browseren på app.billederapport.dk. Du kan tilføje den til hjemmeskærmen med ét tryk, så den fungerer præcis som en almindelig app — uden app-store, uden opdateringer at huske.
+              </p>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span class="faq-q">Kan jeg sende rapporten med mit eget logo og firmanavn?</span>
+                <svg class="faq-chev" aria-hidden="true" viewBox="0 0 20 20" width="20" height="20">
+                  <path d="M5 8l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </summary>
+              <p>
+                Ja. PDF-rapporten brander automatisk med dit logo, dine farver og dine kontaktoplysninger, så kunden modtager en professionel rapport, der ligner den kommer fra dit firma — ikke fra Billederapport.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
       <!-- CTA -->
       <section class="cta">
         <div class="container cta-inner">
@@ -707,6 +964,7 @@
           <a href="#features">Funktioner</a>
           <a href="#how">Sådan virker det</a>
           <a href="#pricing">Pris</a>
+          <a href="#faq">FAQ</a>
         </nav>
       </div>
 

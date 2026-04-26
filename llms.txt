@@ -1,0 +1,26 @@
+# Billederapport
+
+> Billederapport is a Danish-built mobile photo-report app for tradespeople, inspectors, surveyors and small field-service teams. Users take photos on a phone, annotate them, fill in checklists, and send a branded PDF report to the customer by email — all from the job site, including offline. It runs in the browser as a PWA (no install, no app store). Pricing is a single flat plan at 199 DKK/month with a 14-day free trial and no credit card required. Data is hosted in the EU and the product is GDPR-compliant.
+
+## Product summary
+
+- Audience: Danish tradespeople, building inspectors, surveyors, damage assessors, service technicians, sole-traders and small teams.
+- Core use cases: inspection reports, damage documentation (skadesrapport), oversight/tilsyn, service and maintenance reports, property condition reports.
+- Differentiators: works fully offline; EU/GDPR hosting; branded PDF emailed directly to the client; Danish-language UI and Danish-language support; no install (browser PWA); flat monthly price; unlimited reports/photos/templates/customers.
+- Platforms: any modern mobile browser (iOS Safari, Android Chrome) and desktop. Installable as a PWA.
+- Pricing: 199 DKK / month, ex VAT. 14-day free trial. No credit card required. Cancel anytime.
+- Languages: Danish (primary). Support is in Danish.
+- Marketing site: https://billederapport.dk
+- Application: https://app.billederapport.dk
+
+## Key URLs
+
+- [Marketing home (Danish)](https://billederapport.dk/): Product overview, features, how it works, pricing, FAQ.
+- [Web app](https://app.billederapport.dk): The Billederapport application — sign in or start the 14-day trial.
+- [Sign up](https://app.billederapport.dk/signup): Start a 14-day free trial without a credit card.
+- [Sign in](https://app.billederapport.dk/login): Sign in to an existing account.
+
+## Optional
+
+- [Sitemap](https://billederapport.dk/sitemap.xml)
+- [robots.txt](https://billederapport.dk/robots.txt)
