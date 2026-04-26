@@ -22,5 +22,6 @@
 
 ## Optional
 
+- [Full content (markdown)](https://billederapport.dk/llms-full.txt): Markdown copy of the marketing page, ready for LLM ingestion.
 - [Sitemap](https://billederapport.dk/sitemap.xml)
 - [robots.txt](https://billederapport.dk/robots.txt)

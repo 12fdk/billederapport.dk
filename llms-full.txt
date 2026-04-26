@@ -1,0 +1,104 @@
+# Billederapport — fotorapporter direkte på telefonen
+
+> Billederapport is a Danish-built mobile photo-report app for tradespeople, inspectors, surveyors, damage assessors and small field-service teams. Take photos on a phone, annotate them, fill in checklists, and send a branded PDF report to the customer by email — directly from the job site, including offline. Runs as a PWA in any modern browser; no app-store install required. Pricing is a single flat plan at 199 DKK/month with a 14-day free trial and no credit card required. Hosted in the EU and GDPR-compliant.
+
+- Marketing site: <https://billederapport.dk>
+- Web app: <https://app.billederapport.dk>
+- Pricing: 199 DKK / month, ex VAT. 14-day free trial. No credit card required. Cancel anytime.
+- Languages: Danish (UI and support).
+- Hosting: EU. GDPR-compliant.
+
+---
+
+## Hero
+
+**Pæne fotorapporter, færdige på telefonen.**
+
+Uanset om du inspicerer, dokumenterer skader eller laver tilsyn — tag billeder, tilføj noter, og send en færdig PDF-rapport til kunden på få minutter. Også når der ikke er dækning.
+
+- Ingen installation — åbn direkte i browseren.
+- Virker uden dækning — synkroniseres senere.
+- Dine data hostes i EU.
+
+CTAs:
+
+- Prøv gratis i 14 dage: <https://app.billederapport.dk/signup>
+- Åbn appen: <https://app.billederapport.dk>
+
+## Bruges til
+
+Bruges til alle slags inspektioner og dokumentation — ejendom, skader & forsikring, byggeri, service & vedligehold, rådgivning & tilsyn.
+
+## Funktioner
+
+Alt du skal bruge — intet du ikke skal bruge. Lavet sammen med folk der faktisk laver rapporter til daglig. Ingen CRM-bloat, ingen træningsweekender. Bare fotorapporter der er færdige inden du forlader stedet.
+
+- **Foto med annotering** — tag billeder direkte fra telefonen. Tegn cirkler, pile og tekst oven på, og tidsstemplet brændes ind i billedet.
+- **Offline-klar** — alt gemmes lokalt og synkroniseres automatisk når du er online igen.
+- **Egne skabeloner** — byg dine egne tjeklister én gang. Så har alle på holdet den samme, ensartede rapport hver gang.
+- **PDF direkte til kunden** — afslut rapporten og få en pæn, branded PDF sendt på mail med dit firmanavn, logo og farver.
+- **Hele holdet** — inviter dine kolleger, styr rettigheder, og hold alle rapporter samlet ét sted pr. firma.
+- **GDPR og EU-hosting** — dine data og billeder opbevares i EU. Du kan eksportere eller slette det hele med ét klik.
+
+## Sådan virker det
+
+Fra ankomst til afsendt rapport — på én kop kaffe.
+
+1. **Vælg kunde og skabelon** — åbn appen på telefonen, vælg kunden, og start en ny rapport ud fra din egen skabelon.
+2. **Gå i gang på stedet** — svar på spørgsmålene, tag billeder, og markér det vigtige med pile og cirkler. Alt gemmes lokalt.
+3. **Afslut og send** — tryk "Afslut". Appen laver en PDF med dit logo og sender den til kunden. Arkiveret og klar.
+
+## Hvorfor Billederapport
+
+Fordi du skal videre til næste opgave — ikke bruge aftenen på rapporter. Vi har bygget Billederapport sammen med folk der faktisk laver rapporterne. Derfor er det først og fremmest en mobil-app — ikke en desktop-ting man også kan bruge på telefonen.
+
+- **Mobil-først.** Designet til store handsker, kolde fingre og skarpt sollys.
+- **Ingen app-store.** Kør den i browseren eller installer den som app med ét tryk.
+- **Din branding.** Logo, farver og kontaktoplysninger gennem hele rapporten.
+- **Dansk sprog og dansk support.** Vi svarer på dansk, og prisen er i DKK.
+
+## Pris
+
+**Én pris. Alt inkluderet.** Ingen plan-valg, ingen begrænsninger. Du får det hele fra dag ét — og prøver gratis i 14 dage uden at skulle indtaste et kort.
+
+**Billederapport — 199 kr / md.** Alt med. Ubegrænset brug.
+
+- Ubegrænset antal rapporter
+- Ubegrænset fotolagring
+- Ubegrænset antal skabeloner og kunder
+- Offline-tilstand på telefon og tablet
+- Branding med logo og farver
+- PDF direkte på mail til kunden
+- Dansk support
+
+Priser ekskl. moms. Opsig når du vil. Start 14 dages prøve: <https://app.billederapport.dk/signup>
+
+## FAQ
+
+### Hvad er Billederapport?
+
+Billederapport er en dansk mobil-app til at lave fotorapporter på stedet — til inspektioner, skadesdokumentation, byggetilsyn og service. Du tager billeder med telefonen, tilføjer noter og sender en færdig PDF-rapport til kunden, mens du stadig står på stedet. Appen kører i browseren som PWA, så der er ingen installation.
+
+### Virker Billederapport uden internet?
+
+Ja. Billederapport er bygget offline-først, så du kan tage billeder, udfylde tjeklister og skrive noter helt uden dækning. Når telefonen er online igen, synkroniseres alt automatisk, og PDF-rapporten kan sendes til kunden.
+
+### Hvor meget koster Billederapport?
+
+Billederapport koster 199 kr/md ekskl. moms — én pris med ubegrænset antal rapporter, fotos, skabeloner og kunder. Der er 14 dages gratis prøve uden kreditkort, og du kan opsige når som helst.
+
+### Hvem bruger Billederapport?
+
+Billederapport bruges af håndværkere, inspektører, bygningssagkyndige, ejendomsadministratorer, skadesservice og rådgivende tilsynsfolk i Danmark. Det er især lavet til selvstændige og små teams, der laver fotorapporter eller skadesrapporter på telefonen som en del af deres daglige arbejde.
+
+### Er Billederapport GDPR-venlig?
+
+Ja. Alle data og billeder hostes i EU, og Billederapport er bygget efter GDPR. Du kan til enhver tid eksportere eller slette alle data fra din konto med ét klik, og der indgås databehandleraftale ved oprettelse af firma-konto.
+
+### Skal jeg installere en app fra App Store eller Google Play?
+
+Nej. Billederapport er en progressive web app (PWA), som kører direkte i browseren på app.billederapport.dk. Du kan tilføje den til hjemmeskærmen med ét tryk, så den fungerer præcis som en almindelig app — uden app-store, uden opdateringer at huske.
+
+### Kan jeg sende rapporten med mit eget logo og firmanavn?
+
+Ja. PDF-rapporten brander automatisk med dit logo, dine farver og dine kontaktoplysninger, så kunden modtager en professionel rapport, der ligner den kommer fra dit firma — ikke fra Billederapport.
