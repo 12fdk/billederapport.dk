@@ -35,9 +35,10 @@ Alt du skal bruge — intet du ikke skal bruge. Lavet sammen med folk der faktis
 
 - **Foto med annotering** — tag billeder direkte fra telefonen. Tegn cirkler, pile og tekst oven på, og tidsstemplet brændes ind i billedet.
 - **Offline-klar** — alt gemmes lokalt og synkroniseres automatisk når du er online igen.
-- **Egne skabeloner** — byg dine egne tjeklister én gang. Så har alle på holdet den samme, ensartede rapport hver gang.
+- **Egne skabeloner** — lav egne rapporter, der passer til netop dit behov.
+- **Før og efter-billeder** — dokumentér arbejdet fra start til slut. Tag før-billeder ved ankomst og efter-billeder når opgaven er løst, så kunden kan se forskellen sort på hvidt.
 - **PDF direkte til kunden** — afslut rapporten og få en pæn, branded PDF sendt på mail med dit firmanavn, logo og farver.
-- **Hele holdet** — inviter dine kolleger, styr rettigheder, og hold alle rapporter samlet ét sted pr. firma.
+- **Hele holdet** — inviter dine kolleger, styr rettigheder, og hold alle rapporter samlet ét sted pr. kunde.
 - **GDPR og EU-hosting** — dine data og billeder opbevares i EU. Du kan eksportere eller slette det hele med ét klik.
 
 ## Sådan virker det
@@ -54,7 +55,8 @@ Fordi du skal videre til næste opgave — ikke bruge aftenen på rapporter. Vi 
 
 - **Mobil-først.** Designet til store handsker, kolde fingre og skarpt sollys.
 - **Ingen app-store.** Kør den i browseren eller installer den som app med ét tryk.
-- **Din branding.** Logo, farver og kontaktoplysninger gennem hele rapporten.
+- **Din branding.** Logo og kontaktoplysninger gennem hele rapporten.
+- **Anmeldelser indbygget.** Opret dit link til anmeldelser, og få det tilføjet til alle rapporter, så kunderne nemt kan give dig gode anmeldelser.
 - **Dansk sprog og dansk support.** Vi svarer på dansk, og prisen er i DKK.
 
 ## Pris
