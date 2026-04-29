@@ -35,9 +35,10 @@ Alt du skal bruge — intet du ikke skal bruge. Lavet sammen med folk der faktis
 
 - **Foto med annotering** — tag billeder direkte fra telefonen. Tegn cirkler, pile og tekst oven på, og tidsstemplet brændes ind i billedet.
 - **Offline-klar** — alt gemmes lokalt og synkroniseres automatisk når du er online igen.
-- **Egne skabeloner** — lav egne rapporter, der passer til netop dit behov.
+- **Egne skabeloner med tjeklister** — lav skabeloner med dine egne spørgsmål og tjeklister, så hver rapport følger samme faste struktur, og intet bliver glemt.
 - **Før og efter-billeder** — dokumentér arbejdet fra start til slut. Tag før-billeder ved ankomst og efter-billeder når opgaven er løst, så kunden kan se forskellen sort på hvidt.
 - **PDF direkte til kunden** — afslut rapporten og få en pæn, branded PDF sendt på mail med dit firmanavn, logo og farver.
+- **Anmeldelser indbygget** — tilføj dit anmeldelses-link én gang, så ligger det i bunden af hver rapport, og glade kunder har én vej til at give dig stjerner.
 - **Hele holdet** — inviter dine kolleger, styr rettigheder, og hold alle rapporter samlet ét sted pr. kunde.
 - **GDPR og EU-hosting** — dine data og billeder opbevares i EU. Du kan eksportere eller slette det hele med ét klik.
 
