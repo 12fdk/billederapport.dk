@@ -9,4 +9,12 @@
     <xhtml:link rel="alternate" hreflang="da-DK" href="https://billederapport.dk/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://billederapport.dk/" />
   </url>
+  <url>
+    <loc>https://billederapport.dk/skadesrapport-app/</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://billederapport.dk/skadesrapport-app/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billederapport.dk/skadesrapport-app/" />
+  </url>
 </urlset>
