@@ -44,7 +44,7 @@ Alt du skal bruge — intet du ikke skal bruge. Lavet sammen med folk der faktis
 
 ## Sådan virker det
 
-Fra ankomst til afsendt rapport — på én kop kaffe.
+Fra ankomst til afsendt rapport — på den tid det tager at drikke en kop kaffe.
 
 1. **Vælg kunde og skabelon** — åbn appen på telefonen, vælg kunden, og start en ny rapport ud fra din egen skabelon.
 2. **Gå i gang på stedet** — svar på spørgsmålene, tag billeder, og markér det vigtige med pile og cirkler. Alt gemmes lokalt.
