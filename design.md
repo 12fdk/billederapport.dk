@@ -146,7 +146,7 @@ Phone mock uses a custom `44px` outer / `32px` inner radius.
 - Round `.carousel-arrow` buttons sit on the left/right edges of `.carousel` (44×44, paper-on-paper at rest, ink-on-paper on hover). Disabled when at the start/end. They scroll the track by one item via `scrollBy`. Respects `prefers-reduced-motion` by switching to instant scroll.
 - Each `.shot` is a framed device `<picture>` (AVIF + WebP, lazy-loaded) plus a centred `.shot-caption` with `<h3>` title + 1-line `<p>` description (≤ 15 words, ≤ 32ch).
 - No card chrome — just `filter: drop-shadow(...)` on `.shot-img` so the shadow follows the rounded device outline. The framed PNGs carry the visual weight.
-- Source PNGs live in the app repo under `tests/screenshots/output-framed/{iphone-16-pro,ipad-pro,desktop}/…`. Pre-resize new ones to 500/600/900 px wide respectively and encode AVIF + WebP. Keep per-form-factor weight under ~250 KB per format.
+- Source PNGs live in the app repo under `tests/screenshots/output-framed/{iphone-16-pro,ipad-pro,desktop}/…`. Pre-resize new ones to **500 / 1200 / 1800 px** wide respectively (mobile is small enough that 500 px stays crisp at 2×; tablet and desktop need the larger sources so retina displays don't blur the upscaled frame). Encode AVIF (q=65) + WebP (q=85). Keep per-form-factor weight under ~400 KB per format.
 
 ### FAQ
 - `<details>` / `<summary>` per item, no JS toggles. Sits in a `.section-alt` background so the white `--surface` items pop.
