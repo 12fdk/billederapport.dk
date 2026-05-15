@@ -106,14 +106,14 @@ Phone mock uses a custom `44px` outer / `32px` inner radius.
 ### Hero
 - Two-column grid above `900px` (`1.05fr 1fr`), single-column below.
 - Background uses two layered radial accent gradients (top-left bigger, top-right faint).
-- Right column is the **phone mock** (`.phone` / `.phone-screen`) with a rotated 2° tilt that flattens at `≤480px` and under `prefers-reduced-motion`.
-- A floating "PDF sendt" `.hero-card` overlaps the bottom-left of the phone above `900px`; stacks below the phone on smaller widths.
+- Right column is a **real framed iPhone screenshot** (`.phone` wraps a `<picture>` with AVIF + WebP). The phone is rotated `-2°`; the tilt flattens at `≤480px` and under `prefers-reduced-motion`. Drop-shadow comes from `filter: drop-shadow(...)` so the rounded phone frame casts a soft, frame-shaped shadow (not a rectangle).
+- The image is eager + `fetchpriority="high"` because it's the LCP element. Source PNGs (1350×2760, ~500 KB each) are pre-resized to 720px wide and encoded as AVIF (~26 KB) and WebP (~40 KB).
 - Trust points: bullet list with accent checkmark SVGs.
 
-### Phone mock
-- Dark `#0e1520` chassis, inner notch at top, paper screen.
-- Inside the screen: header row (orange dot + title + "Kladde" badge), section titles in uppercase muted micro-caps, white question rows with pill answers (green `pill-ok` / orange `pill-no`), a mock photo block with a circle + arrow annotation in `--accent`, a timestamp tag, and an accent CTA at the bottom.
-- Pure CSS — no images, no JS. Keep it that way; the mock has to render instantly for LCP.
+### Phone screenshot (`.phone`)
+- Container for a single framed iPhone screenshot in the hero. Just a `<picture>` wrapper — no chassis or notch in CSS; the frame is baked into the source PNG.
+- `filter: drop-shadow(...)` (not `box-shadow`) so the soft shadow follows the rounded phone outline.
+- Source images live in `assets/screenshots/` and come from the app repo's framed Playwright shots (`output-framed/iphone-16-pro/…`). Don't bake a phone frame in CSS again; the framed PNGs are the canonical source.
 
 ### Strip / social proof
 - Thin band, `--surface-2` background, top/bottom borders.
@@ -138,8 +138,17 @@ Phone mock uses a custom `44px` outer / `32px` inner radius.
 - `.plan-amount` 2.5rem 800-weight, `.plan-unit` muted.
 - Checklist items prefixed by a CSS-drawn accent checkmark (rotated borders, no icon font).
 
+### Screenshots gallery / carousel (`.carousel` + `.shots-grid`)
+- Sits between the **Why** section and **Pricing**, with `.section-alt` background.
+- A pill-style `.device-toggle` above the carousel switches between **Mobil / Tablet / Desktop** by rewriting each `<picture>`'s `srcset`. Each `.shot` carries `data-mobile-*`, `data-tablet-*`, `data-desktop-*` attributes the script reads from.
+- The `.shots-grid` itself is a horizontal flex carousel (not a grid) with `scroll-snap-type: x mandatory`. Visible-item counts per device: **3 mobile / 2 tablet / 1 desktop**, computed as `flex: 0 0 max(<floor>, calc((100% - <gap-sum>) / N))` so very narrow viewports fall back to a minimum item width and the rest scrolls.
+- Round `.carousel-arrow` buttons sit on the left/right edges of `.carousel` (44×44, paper-on-paper at rest, ink-on-paper on hover). Disabled when at the start/end. They scroll the track by one item via `scrollBy`. Respects `prefers-reduced-motion` by switching to instant scroll.
+- Each `.shot` is a framed device `<picture>` (AVIF + WebP, lazy-loaded) plus a centred `.shot-caption` with `<h3>` title + 1-line `<p>` description (≤ 15 words, ≤ 32ch).
+- No card chrome — just `filter: drop-shadow(...)` on `.shot-img` so the shadow follows the rounded device outline. The framed PNGs carry the visual weight.
+- Source PNGs live in the app repo under `tests/screenshots/output-framed/{iphone-16-pro,ipad-pro,desktop}/…`. Pre-resize new ones to **500 / 1200 / 1800 px** wide respectively (mobile is small enough that 500 px stays crisp at 2×; tablet and desktop need the larger sources so retina displays don't blur the upscaled frame). Encode AVIF (q=65) + WebP (q=85). Keep per-form-factor weight under ~400 KB per format.
+
 ### FAQ
-- `<details>` / `<summary>` per item, no JS toggles.
+- `<details>` / `<summary>` per item, no JS toggles. Sits in a `.section-alt` background so the white `--surface` items pop.
 - Chevron rotates 180° on `[open]`, color shifts to `--accent-text`. Open state tints the border and upgrades to `--shadow`.
 - Focus outline on summary uses the accent ring at 2px offset.
 
@@ -216,7 +225,7 @@ Don't invent intermediate values like `13px` or `1.7rem`. The 4px stops (`4`, `1
 
 - Inter Variable has every weight from 100 to 900 — that's a trap. Use **only**: 400 (body), 500 (links/labels), 600 (eyebrow / nav / button), 700 (headings). Anything heavier than 700 is reserved for the plan price (currently 800).
 - **No more than three distinct weights in a single section.** If a section already uses 400/600/700, don't add 500 just to nudge a label.
-- **Tabular numerals** for any aligned numerics (price `199`, timestamps like `kl. 10:34`, dates like `24-04-2026`). Add `font-feature-settings: 'tnum' 1, 'cv11', 'ss01', 'ss03';` to `.plan-amount`, `.photo-timestamp`, `.hero-card-sub`, and any future stats. Without `tnum`, Inter's proportional digits make prices look wobbly.
+- **Tabular numerals** for any aligned numerics (price `199`, dates like `24-04-2026`). Add `font-feature-settings: 'tnum' 1, 'cv11', 'ss01', 'ss03';` to `.plan-amount` and any future stats. Without `tnum`, Inter's proportional digits make prices look wobbly.
 
 ### Prose width
 
@@ -293,7 +302,7 @@ Static cards rest on a 1px border + the `--surface` swap. They gain `--shadow` o
 
 ### Section rhythm
 
-Adjacent full-width sections must alternate background between `--bg` and `--surface-2` (via `.section-alt`). Two `--bg` sections in a row collapse the visual rhythm. Current order — hero → strip(alt) → features → how(alt) → why → pricing(alt) → faq → cta — already does this; preserve it when reordering.
+Adjacent full-width sections must alternate background between `--bg` and `--surface-2` (via `.section-alt`). Two `--bg` sections in a row collapse the visual rhythm. Current order — hero → strip(alt) → features → how(alt) → why → skaermbilleder(alt) → pricing → faq(alt) → cta — already does this; preserve it when reordering.
 
 ### Copy length budgets
 

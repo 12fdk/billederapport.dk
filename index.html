@@ -503,236 +503,28 @@ button {
   flex: 0 0 auto;
 }
 
-/* ---------- Hero visual: phone mock ---------- */
+/* ---------- Hero visual: real app screenshot ---------- */
 .hero-visual {
   position: relative;
   justify-self: center;
   width: 100%;
-  max-width: 360px;
-  aspect-ratio: 9 / 16;
+  max-width: 340px;
   margin-top: 1rem;
 }
 .phone {
   position: relative;
+  display: block;
   width: 100%;
-  height: 100%;
-  background: #0e1520;
-  border-radius: 44px;
-  padding: 14px;
-  box-shadow:
-    0 0 0 2px rgba(255, 255, 255, 0.04) inset,
-    0 30px 80px rgba(26, 35, 50, 0.35),
-    0 8px 22px rgba(26, 35, 50, 0.18);
+  filter:
+    drop-shadow(0 30px 60px rgba(26, 35, 50, 0.28))
+    drop-shadow(0 8px 18px rgba(26, 35, 50, 0.18));
   transform: rotate(-2deg);
+  transform-origin: center;
 }
-.phone-notch {
-  position: absolute;
-  top: 22px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90px;
-  height: 24px;
-  background: #000;
-  border-radius: 999px;
-  z-index: 2;
-}
-.phone-screen {
-  position: relative;
+.phone img {
+  display: block;
   width: 100%;
-  height: 100%;
-  background: var(--paper);
-  color: var(--ink);
-  border-radius: 32px;
-  overflow: hidden;
-  padding: 56px 18px 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.mock-header {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  margin-bottom: 4px;
-}
-.mock-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  background: var(--accent);
-}
-.mock-title {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--ink);
-  flex: 1;
-}
-.mock-badge {
-  font-size: 0.7rem;
-  font-weight: 600;
-  padding: 3px 8px;
-  border-radius: 999px;
-  background: rgba(232, 131, 58, 0.15);
-  color: var(--accent-strong);
-}
-.mock-section-title {
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--ink-muted);
-  margin-top: 4px;
-}
-.mock-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 0.75rem;
-  background: #fff;
-  border-radius: 10px;
-  padding: 8px 10px;
-  font-size: 0.8rem;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
-}
-.mock-label {
-  color: var(--ink-muted);
-}
-.mock-value {
-  color: var(--ink);
-  font-weight: 600;
-  text-align: right;
-}
-.mock-q {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.5rem;
-  background: #fff;
-  border-radius: 10px;
-  padding: 8px 10px;
-  font-size: 0.82rem;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
-}
-.mock-q-text {
-  color: var(--ink);
-  font-weight: 500;
-}
-.mock-pill {
-  font-size: 0.7rem;
-  padding: 3px 8px;
-  border-radius: 999px;
-  font-weight: 700;
-}
-.pill-ok {
-  background: #d6f0dc;
-  color: #1f6f3a;
-}
-.pill-no {
-  background: #fde3d1;
-  color: #9a4414;
-}
-.mock-photo {
-  position: relative;
-  flex: 1;
-  min-height: 90px;
-  margin-top: 2px;
-  border-radius: 12px;
-  background:
-    linear-gradient(135deg, #55616e 0%, #7a8592 55%, #9ba5b1 100%),
-    #8a94a0;
-  overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-}
-.photo-anno-circle {
-  position: absolute;
-  left: 22%;
-  top: 30%;
-  width: 62px;
-  height: 62px;
-  border: 3px solid var(--accent);
-  border-radius: 999px;
-  box-shadow: 0 0 0 3px rgba(232, 131, 58, 0.2);
-}
-.photo-anno-arrow {
-  position: absolute;
-  right: 14%;
-  bottom: 18%;
-  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.25));
-}
-.photo-timestamp {
-  position: absolute;
-  left: 10px;
-  bottom: 8px;
-  font-size: 0.65rem;
-  font-weight: 600;
-  padding: 3px 8px;
-  border-radius: 6px;
-  background: rgba(14, 21, 32, 0.7);
-  color: #fff;
-  letter-spacing: 0.02em;
-  font-variant-numeric: tabular-nums;
-  font-feature-settings: 'tnum' 1, 'cv11', 'ss01', 'ss03';
-}
-.mock-cta {
-  margin-top: auto;
-  height: 42px;
-  border: none;
-  border-radius: 12px;
-  background: var(--accent);
-  color: #fff;
-  font-weight: 700;
-  font-size: 0.9rem;
-  box-shadow: 0 4px 10px rgba(232, 131, 58, 0.3);
-}
-
-.hero-card {
-  position: absolute;
-  left: -6%;
-  bottom: 8%;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.8rem 1rem;
-  background: var(--surface);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  border: 1px solid var(--border);
-  max-width: 240px;
-  transform: rotate(1.5deg);
-}
-.hero-card-icon {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  background: var(--accent-soft);
-  color: var(--accent-strong);
-  flex: 0 0 auto;
-}
-.hero-card-title {
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: var(--text);
-}
-.hero-card-sub {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  margin-top: 1px;
-  font-variant-numeric: tabular-nums;
-  font-feature-settings: 'tnum' 1, 'cv11', 'ss01', 'ss03';
-}
-
-@media (max-width: 899px) {
-  .hero-card {
-    position: static;
-    left: auto;
-    right: auto;
-    bottom: auto;
-    transform: none;
-    margin: 1.25rem auto 0;
-    max-width: 340px;
-  }
+  height: auto;
 }
 
 @media (max-width: 480px) {
@@ -741,9 +533,6 @@ button {
   }
   .phone {
     transform: none;
-  }
-  .hero-card {
-    max-width: 100%;
   }
 }
 
@@ -943,6 +732,166 @@ button {
   margin-bottom: 0.5rem;
 }
 
+/* ---------- Screenshots gallery ---------- */
+.device-toggle {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  width: fit-content;
+  margin: 0 auto 3rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  box-shadow: var(--shadow-sm);
+}
+.device-toggle button {
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.5rem 0.95rem;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.device-toggle button:hover {
+  color: var(--text);
+}
+.device-toggle button.is-active {
+  background: var(--ink);
+  color: #f5f1ea;
+}
+.device-toggle button:focus-visible {
+  outline: 3px solid var(--ring);
+  outline-offset: 2px;
+}
+@media (prefers-color-scheme: dark) {
+  .device-toggle button.is-active {
+    background: var(--accent);
+    color: var(--ink);
+  }
+}
+
+.carousel {
+  position: relative;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.shots-grid {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 1rem 1rem 1.5rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.shots-grid::-webkit-scrollbar {
+  display: none;
+}
+.shots-grid[data-device='mobile'] .shot {
+  flex: 0 0 max(240px, calc((100% - 3rem) / 3));
+}
+.shots-grid[data-device='tablet'] .shot {
+  flex: 0 0 max(300px, calc((100% - 1.5rem) / 2));
+}
+.shots-grid[data-device='desktop'] .shot {
+  flex: 0 0 max(360px, 100%);
+}
+.shot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  scroll-snap-align: start;
+}
+.shot-img {
+  display: block;
+  width: 100%;
+  filter:
+    drop-shadow(0 12px 24px rgba(26, 35, 50, 0.16))
+    drop-shadow(0 4px 8px rgba(26, 35, 50, 0.08));
+}
+.shots-grid[data-device='mobile'] .shot-img {
+  max-width: 260px;
+}
+.shots-grid[data-device='tablet'] .shot-img {
+  max-width: 360px;
+}
+.shots-grid[data-device='desktop'] .shot-img {
+  max-width: 720px;
+}
+.shot-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.shot-caption {
+  margin-top: 1.25rem;
+  max-width: 36ch;
+}
+.shot-caption h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.shot-caption p {
+  margin-top: 0.4rem;
+  color: var(--text-muted);
+  font-size: 0.925rem;
+  line-height: 1.5;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text);
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  z-index: 2;
+  transition: background-color 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+}
+.carousel-arrow:hover:not(:disabled) {
+  background: var(--ink);
+  color: var(--paper);
+}
+.carousel-arrow:focus-visible {
+  outline: 3px solid var(--ring);
+  outline-offset: 2px;
+}
+.carousel-arrow:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+.carousel-prev {
+  left: -8px;
+}
+.carousel-next {
+  right: -8px;
+}
+@media (min-width: 760px) {
+  .carousel-prev {
+    left: -22px;
+  }
+  .carousel-next {
+    right: -22px;
+  }
+}
+
 /* ---------- Plans ---------- */
 .plans {
   display: grid;
@@ -1132,9 +1081,6 @@ button {
   .phone {
     transform: none;
   }
-  .hero-card {
-    transform: none;
-  }
 }
 
 /* ---------- FAQ ---------- */
@@ -1256,6 +1202,17 @@ button {
             "Anmeldelses-link indbygget i hver rapport",
             "Team og rettighedsstyring",
             "GDPR og EU-hosting"
+          ],
+          "screenshot": [
+            "https://billederapport.dk/assets/screenshots/hero-overview-720.webp",
+            "https://billederapport.dk/assets/screenshots/reports-list-500.webp",
+            "https://billederapport.dk/assets/screenshots/report-create-500.webp",
+            "https://billederapport.dk/assets/screenshots/report-fill-status-500.webp",
+            "https://billederapport.dk/assets/screenshots/report-fill-photo-500.webp",
+            "https://billederapport.dk/assets/screenshots/report-send-500.webp",
+            "https://billederapport.dk/assets/screenshots/customer-detail-500.webp",
+            "https://billederapport.dk/assets/screenshots/settings-templates-500.webp",
+            "https://billederapport.dk/assets/screenshots/settings-company-500.webp"
           ],
           "offers": {
             "@type": "Offer",
@@ -1482,6 +1439,7 @@ button {
         <nav aria-label="Hovedmenu" class="nav-links">
           <a href="#features">Funktioner</a>
           <a href="#how">Sådan virker det</a>
+          <a href="#skaermbilleder">Skærmbilleder</a>
           <a href="#pricing">Pris</a>
           <a href="#faq">FAQ</a>
         </nav>
@@ -1561,86 +1519,20 @@ button {
             </ul>
           </div>
 
-          <div class="hero-visual" aria-hidden="true">
-            <div class="phone">
-              <div class="phone-notch"></div>
-              <div class="phone-screen">
-                <div class="mock-header">
-                  <span class="mock-dot"></span>
-                  <span class="mock-title">Ny rapport</span>
-                  <span class="mock-badge">Kladde</span>
-                </div>
-                <div class="mock-section-title">Kunde</div>
-                <div class="mock-row">
-                  <span class="mock-label">Navn</span>
-                  <span class="mock-value">Eksempel Service ApS</span>
-                </div>
-                <div class="mock-row">
-                  <span class="mock-label">Adresse</span>
-                  <span class="mock-value">Testvej 1, 8000 Aarhus</span>
-                </div>
-
-                <div class="mock-section-title">Spørgsmål</div>
-                <div class="mock-q">
-                  <span class="mock-q-text">Er taget tæt?</span>
-                  <span class="mock-pill pill-ok">Ja</span>
-                </div>
-                <div class="mock-q">
-                  <span class="mock-q-text">Mangler der fuger?</span>
-                  <span class="mock-pill pill-no">Nej</span>
-                </div>
-
-                <div class="mock-photo">
-                  <div class="photo-anno photo-anno-circle"></div>
-                  <div class="photo-anno photo-anno-arrow">
-                    <svg viewBox="0 0 60 60" width="60" height="60" aria-hidden="true">
-                      <path
-                        d="M6 54 L48 12"
-                        stroke="#E8833A"
-                        stroke-width="4"
-                        stroke-linecap="round"
-                        fill="none"
-                      />
-                      <path
-                        d="M48 12 L36 14 M48 12 L46 24"
-                        stroke="#E8833A"
-                        stroke-width="4"
-                        stroke-linecap="round"
-                        fill="none"
-                      />
-                    </svg>
-                  </div>
-                  <span class="photo-timestamp">24-04-2026 · 10:32</span>
-                </div>
-
-                <div class="mock-cta">Afslut og send PDF</div>
-              </div>
-            </div>
-
-            <div class="hero-card">
-              <div class="hero-card-icon">
-                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
-                  <path
-                    d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M14 3v5h5"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-              <div>
-                <div class="hero-card-title">PDF sendt til kunden</div>
-                <div class="hero-card-sub">kunde@eksempel.dk · kl. 10:34</div>
-              </div>
-            </div>
+          <div class="hero-visual">
+            <picture class="phone">
+              <source type="image/avif" srcset="/assets/screenshots/hero-overview-720.avif" />
+              <source type="image/webp" srcset="/assets/screenshots/hero-overview-720.webp" />
+              <img
+                src="/assets/screenshots/hero-overview-720.webp"
+                alt="Billederapport-appen på en iPhone: oversigtsskærmen med seneste kunder og en igangværende rapport."
+                width="720"
+                height="1472"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -2137,8 +2029,244 @@ button {
         </div>
       </section>
 
+      <!-- APP SCREENSHOTS -->
+      <section id="skaermbilleder" class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Skærmbilleder</p>
+            <h2>Sådan ser appen ud — fra start til afsendt PDF.</h2>
+            <p class="section-lede">
+              Otte skærmbilleder fra den rigtige app — vælg mobil, tablet eller
+              desktop.
+            </p>
+          </div>
+
+          <div class="device-toggle" role="group" aria-label="Vælg enhed">
+            <button type="button" data-device="mobile" class="is-active" aria-pressed="true">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16">
+                <rect x="7" y="3" width="10" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.6" />
+                <path d="M11 18h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+              </svg>
+              Mobil
+            </button>
+            <button type="button" data-device="tablet" aria-pressed="false">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16">
+                <rect x="4" y="3" width="16" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.6" />
+                <path d="M11 18.5h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+              </svg>
+              Tablet
+            </button>
+            <button type="button" data-device="desktop" aria-pressed="false">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16">
+                <rect x="3" y="4" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.6" />
+                <path d="M9 20h6M12 17v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+              </svg>
+              Desktop
+            </button>
+          </div>
+
+          <div class="carousel">
+            <button type="button" class="carousel-arrow carousel-prev" aria-label="Forrige skærmbillede" aria-controls="shots-track">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22">
+                <path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button type="button" class="carousel-arrow carousel-next" aria-label="Næste skærmbillede" aria-controls="shots-track">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22">
+                <path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <ul id="shots-track" class="shots-grid" data-device="mobile" role="list">
+            <li class="shot">
+              <picture
+                class="shot-img"
+                data-slug="reports-list"
+                data-mobile-w="500" data-mobile-h="1022"
+                data-tablet-w="1200" data-tablet-h="1664"
+                data-desktop-w="1800" data-desktop-h="1032"
+              >
+                <source type="image/avif" srcset="/assets/screenshots/reports-list-500.avif" />
+                <source type="image/webp" srcset="/assets/screenshots/reports-list-500.webp" />
+                <img
+                  src="/assets/screenshots/reports-list-500.webp"
+                  alt="Skærmbillede: Listen over rapporter med søgefelt og en afsluttet rapport for Mette Holm Pedersen."
+                  width="500" height="1022"
+                  loading="lazy" decoding="async"
+                />
+              </picture>
+              <div class="shot-caption">
+                <h3>Rapporter</h3>
+                <p>Alle dine rapporter samlet ét sted — med søgning og status.</p>
+              </div>
+            </li>
+
+            <li class="shot">
+              <picture
+                class="shot-img"
+                data-slug="report-create"
+                data-mobile-w="500" data-mobile-h="1022"
+                data-tablet-w="1200" data-tablet-h="1664"
+                data-desktop-w="1800" data-desktop-h="1032"
+              >
+                <source type="image/avif" srcset="/assets/screenshots/report-create-500.avif" />
+                <source type="image/webp" srcset="/assets/screenshots/report-create-500.webp" />
+                <img
+                  src="/assets/screenshots/report-create-500.webp"
+                  alt="Skærmbillede: Opret ny rapport — vælg eksisterende eller ny kunde, og skriv en titel."
+                  width="500" height="1022"
+                  loading="lazy" decoding="async"
+                />
+              </picture>
+              <div class="shot-caption">
+                <h3>Opret ny rapport</h3>
+                <p>Vælg kunde og skabelon — ny rapport på sekunder.</p>
+              </div>
+            </li>
+
+            <li class="shot">
+              <picture
+                class="shot-img"
+                data-slug="report-fill-status"
+                data-mobile-w="500" data-mobile-h="1022"
+                data-tablet-w="1200" data-tablet-h="1664"
+                data-desktop-w="1800" data-desktop-h="1032"
+              >
+                <source type="image/avif" srcset="/assets/screenshots/report-fill-status-500.avif" />
+                <source type="image/webp" srcset="/assets/screenshots/report-fill-status-500.webp" />
+                <img
+                  src="/assets/screenshots/report-fill-status-500.webp"
+                  alt="Skærmbillede: Sokkel/ydremure med statusknapper Kritisk, Alvorlig, Mindre og Undersøg."
+                  width="500" height="1022"
+                  loading="lazy" decoding="async"
+                />
+              </picture>
+              <div class="shot-caption">
+                <h3>Tjekliste på stedet</h3>
+                <p>Sæt status med ét tryk. Designet til store fingre og skarpt sollys.</p>
+              </div>
+            </li>
+
+            <li class="shot">
+              <picture
+                class="shot-img"
+                data-slug="report-fill-photo"
+                data-mobile-w="500" data-mobile-h="1022"
+                data-tablet-w="1200" data-tablet-h="1664"
+                data-desktop-w="1800" data-desktop-h="1032"
+              >
+                <source type="image/avif" srcset="/assets/screenshots/report-fill-photo-500.avif" />
+                <source type="image/webp" srcset="/assets/screenshots/report-fill-photo-500.webp" />
+                <img
+                  src="/assets/screenshots/report-fill-photo-500.webp"
+                  alt="Skærmbillede: Udfyldt besvarelse med statussen Mindre, en beskrivelse og en bemærkning."
+                  width="500" height="1022"
+                  loading="lazy" decoding="async"
+                />
+              </picture>
+              <div class="shot-caption">
+                <h3>Foto og noter</h3>
+                <p>Tag billeder direkte ind i rapporten. Skriv noter mens du står der.</p>
+              </div>
+            </li>
+
+            <li class="shot">
+              <picture
+                class="shot-img"
+                data-slug="report-send"
+                data-mobile-w="500" data-mobile-h="1022"
+                data-tablet-w="1200" data-tablet-h="1664"
+                data-desktop-w="1800" data-desktop-h="1032"
+              >
+                <source type="image/avif" srcset="/assets/screenshots/report-send-500.avif" />
+                <source type="image/webp" srcset="/assets/screenshots/report-send-500.webp" />
+                <img
+                  src="/assets/screenshots/report-send-500.webp"
+                  alt="Skærmbillede: Dialog der spørger om rapporten skal sendes til kundens mail."
+                  width="500" height="1022"
+                  loading="lazy" decoding="async"
+                />
+              </picture>
+              <div class="shot-caption">
+                <h3>Send som PDF</h3>
+                <p>Færdig rapport sendes til kundens mail — med dit logo på.</p>
+              </div>
+            </li>
+
+            <li class="shot">
+              <picture
+                class="shot-img"
+                data-slug="customer-detail"
+                data-mobile-w="500" data-mobile-h="1022"
+                data-tablet-w="1200" data-tablet-h="1664"
+                data-desktop-w="1800" data-desktop-h="1032"
+              >
+                <source type="image/avif" srcset="/assets/screenshots/customer-detail-500.avif" />
+                <source type="image/webp" srcset="/assets/screenshots/customer-detail-500.webp" />
+                <img
+                  src="/assets/screenshots/customer-detail-500.webp"
+                  alt="Skærmbillede: Kundekartotek — Mette Holm Pedersen med navn, mail, telefon og adresse."
+                  width="500" height="1022"
+                  loading="lazy" decoding="async"
+                />
+              </picture>
+              <div class="shot-caption">
+                <h3>Kundekartotek</h3>
+                <p>Privatkunder og virksomheder. Find tidligere rapporter i ét klik.</p>
+              </div>
+            </li>
+
+            <li class="shot">
+              <picture
+                class="shot-img"
+                data-slug="settings-templates"
+                data-mobile-w="500" data-mobile-h="1022"
+                data-tablet-w="1200" data-tablet-h="1664"
+                data-desktop-w="1800" data-desktop-h="1032"
+              >
+                <source type="image/avif" srcset="/assets/screenshots/settings-templates-500.avif" />
+                <source type="image/webp" srcset="/assets/screenshots/settings-templates-500.webp" />
+                <img
+                  src="/assets/screenshots/settings-templates-500.webp"
+                  alt="Skærmbillede: Standardskabeloner med Bygningsgennemgang og Før og Efter."
+                  width="500" height="1022"
+                  loading="lazy" decoding="async"
+                />
+              </picture>
+              <div class="shot-caption">
+                <h3>Skabeloner</h3>
+                <p>Brug færdige skabeloner — eller lav dine egne på få minutter.</p>
+              </div>
+            </li>
+
+            <li class="shot">
+              <picture
+                class="shot-img"
+                data-slug="settings-company"
+                data-mobile-w="500" data-mobile-h="1022"
+                data-tablet-w="1200" data-tablet-h="1664"
+                data-desktop-w="1800" data-desktop-h="1032"
+              >
+                <source type="image/avif" srcset="/assets/screenshots/settings-company-500.avif" />
+                <source type="image/webp" srcset="/assets/screenshots/settings-company-500.webp" />
+                <img
+                  src="/assets/screenshots/settings-company-500.webp"
+                  alt="Skærmbillede: Virksomhedsoplysninger — ACME Corp, CVR, adresse og kontakt."
+                  width="500" height="1022"
+                  loading="lazy" decoding="async"
+                />
+              </picture>
+              <div class="shot-caption">
+                <h3>Din branding</h3>
+                <p>Logo, farver og firmaoplysninger — gennem hele rapporten.</p>
+              </div>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <!-- PRICING -->
-      <section id="pricing" class="section section-alt">
+      <section id="pricing" class="section">
         <div class="container">
           <div class="section-head">
             <p class="eyebrow">Pris</p>
@@ -2176,7 +2304,7 @@ button {
       </section>
 
       <!-- FAQ -->
-      <section id="faq" class="section">
+      <section id="faq" class="section section-alt">
         <div class="container">
           <div class="section-head">
             <p class="eyebrow">Spørgsmål &amp; svar</p>
@@ -2495,6 +2623,7 @@ button {
           <h3>Produkt</h3>
           <a href="#features">Funktioner</a>
           <a href="#how">Sådan virker det</a>
+          <a href="#skaermbilleder">Skærmbilleder</a>
           <a href="#pricing">Pris</a>
           <a href="#faq">FAQ</a>
         </nav>
@@ -2508,6 +2637,68 @@ button {
 
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
+
+      (function () {
+        var grid = document.querySelector('.shots-grid');
+        var toggle = document.querySelector('.device-toggle');
+        var prev = document.querySelector('.carousel-prev');
+        var next = document.querySelector('.carousel-next');
+        if (!grid || !toggle) return;
+        var buttons = toggle.querySelectorAll('button[data-device]');
+        var sizes = { mobile: '500', tablet: 'tablet-1200', desktop: 'desktop-1800' };
+
+        function updateArrows() {
+          if (!prev || !next) return;
+          var padLeft = parseFloat(getComputedStyle(grid).paddingLeft) || 0;
+          prev.disabled = grid.scrollLeft <= padLeft + 2;
+          next.disabled = grid.scrollLeft + grid.clientWidth >= grid.scrollWidth - 2;
+        }
+        function itemStep() {
+          var first = grid.querySelector('.shot');
+          if (!first) return grid.clientWidth;
+          var style = getComputedStyle(grid);
+          var gap = parseFloat(style.columnGap || style.gap) || 0;
+          return first.getBoundingClientRect().width + gap;
+        }
+        function scrollBy(dir) {
+          var behavior = matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+          grid.scrollBy({ left: dir * itemStep(), behavior: behavior });
+        }
+        function setDevice(device) {
+          if (!sizes[device]) return;
+          grid.dataset.device = device;
+          buttons.forEach(function (b) {
+            var active = b.dataset.device === device;
+            b.classList.toggle('is-active', active);
+            b.setAttribute('aria-pressed', active ? 'true' : 'false');
+          });
+          grid.querySelectorAll('picture.shot-img').forEach(function (pic) {
+            var slug = pic.dataset.slug;
+            var size = sizes[device];
+            var avif = '/assets/screenshots/' + slug + '-' + size + '.avif';
+            var webp = '/assets/screenshots/' + slug + '-' + size + '.webp';
+            var srcs = pic.querySelectorAll('source');
+            if (srcs[0]) srcs[0].srcset = avif;
+            if (srcs[1]) srcs[1].srcset = webp;
+            var img = pic.querySelector('img');
+            if (img) {
+              img.width = pic.dataset[device + 'W'];
+              img.height = pic.dataset[device + 'H'];
+              img.src = webp;
+            }
+          });
+          grid.scrollTo({ left: 0, behavior: 'auto' });
+          requestAnimationFrame(updateArrows);
+        }
+        buttons.forEach(function (b) {
+          b.addEventListener('click', function () { setDevice(b.dataset.device); });
+        });
+        if (prev) prev.addEventListener('click', function () { scrollBy(-1); });
+        if (next) next.addEventListener('click', function () { scrollBy(1); });
+        grid.addEventListener('scroll', updateArrows, { passive: true });
+        window.addEventListener('resize', updateArrows);
+        updateArrows();
+      })();
     </script>
     <script defer src="https://umami.robert-jensen.dk/script.js" data-website-id="39882bf2-3493-429b-bb09-25e00528822a"></script>
   </body>
