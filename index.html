@@ -787,26 +787,99 @@ button {
 }
 
 /* ---------- Screenshots gallery ---------- */
-.shots-grid {
-  display: grid;
-  gap: 3rem 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  max-width: 1080px;
+.device-toggle {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  width: fit-content;
+  margin: 0 auto 3rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  box-shadow: var(--shadow-sm);
+}
+.device-toggle button {
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.5rem 0.95rem;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.device-toggle button:hover {
+  color: var(--text);
+}
+.device-toggle button.is-active {
+  background: var(--ink);
+  color: #f5f1ea;
+}
+.device-toggle button:focus-visible {
+  outline: 3px solid var(--ring);
+  outline-offset: 2px;
+}
+@media (prefers-color-scheme: dark) {
+  .device-toggle button.is-active {
+    background: var(--accent);
+    color: var(--ink);
+  }
+}
+
+.carousel {
+  position: relative;
+  max-width: 1160px;
   margin: 0 auto;
+}
+.shots-grid {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 1rem 1rem 1.5rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.shots-grid::-webkit-scrollbar {
+  display: none;
+}
+.shots-grid[data-device='mobile'] .shot {
+  flex: 0 0 max(240px, calc((100% - 3rem) / 3));
+}
+.shots-grid[data-device='tablet'] .shot {
+  flex: 0 0 max(300px, calc((100% - 1.5rem) / 2));
+}
+.shots-grid[data-device='desktop'] .shot {
+  flex: 0 0 max(360px, 100%);
 }
 .shot {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  scroll-snap-align: start;
 }
 .shot-img {
   display: block;
   width: 100%;
-  max-width: 260px;
   filter:
     drop-shadow(0 12px 24px rgba(26, 35, 50, 0.16))
     drop-shadow(0 4px 8px rgba(26, 35, 50, 0.08));
+}
+.shots-grid[data-device='mobile'] .shot-img {
+  max-width: 260px;
+}
+.shots-grid[data-device='tablet'] .shot-img {
+  max-width: 360px;
+}
+.shots-grid[data-device='desktop'] .shot-img {
+  max-width: 720px;
 }
 .shot-img img {
   display: block;
@@ -815,7 +888,7 @@ button {
 }
 .shot-caption {
   margin-top: 1.25rem;
-  max-width: 32ch;
+  max-width: 36ch;
 }
 .shot-caption h3 {
   font-size: 1rem;
@@ -826,6 +899,51 @@ button {
   color: var(--text-muted);
   font-size: 0.925rem;
   line-height: 1.5;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text);
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  z-index: 2;
+  transition: background-color 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+}
+.carousel-arrow:hover:not(:disabled) {
+  background: var(--ink);
+  color: var(--paper);
+}
+.carousel-arrow:focus-visible {
+  outline: 3px solid var(--ring);
+  outline-offset: 2px;
+}
+.carousel-arrow:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+.carousel-prev {
+  left: -8px;
+}
+.carousel-next {
+  right: -8px;
+}
+@media (min-width: 760px) {
+  .carousel-prev {
+    left: -22px;
+  }
+  .carousel-next {
+    right: -22px;
+  }
 }
 
 /* ---------- Plans ---------- */
@@ -1378,6 +1496,7 @@ button {
         <nav aria-label="Hovedmenu" class="nav-links">
           <a href="#features">Funktioner</a>
           <a href="#how">Sådan virker det</a>
+          <a href="#skaermbilleder">Skærmbilleder</a>
           <a href="#pricing">Pris</a>
           <a href="#faq">FAQ</a>
         </nav>
@@ -1463,7 +1582,7 @@ button {
               <source type="image/webp" srcset="/assets/screenshots/hero-overview-720.webp" />
               <img
                 src="/assets/screenshots/hero-overview-720.webp"
-                alt="Billederapport-appen på en iPhone: oversigtsskærmen med faner for Oversigt, Kunder og Rapporter."
+                alt="Billederapport-appen på en iPhone: oversigtsskærmen med seneste kunder og en igangværende rapport."
                 width="720"
                 height="1472"
                 loading="eager"
@@ -1999,14 +2118,55 @@ button {
             <p class="eyebrow">Skærmbilleder</p>
             <h2>Sådan ser appen ud — fra start til afsendt PDF.</h2>
             <p class="section-lede">
-              Otte skærmbilleder fra den rigtige app, taget på iPhone. Ingen
-              mockups.
+              Otte skærmbilleder fra den rigtige app — vælg mobil, tablet eller
+              desktop.
             </p>
           </div>
 
-          <ul class="shots-grid" role="list">
+          <div class="device-toggle" role="group" aria-label="Vælg enhed">
+            <button type="button" data-device="mobile" class="is-active" aria-pressed="true">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16">
+                <rect x="7" y="3" width="10" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.6" />
+                <path d="M11 18h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+              </svg>
+              Mobil
+            </button>
+            <button type="button" data-device="tablet" aria-pressed="false">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16">
+                <rect x="4" y="3" width="16" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.6" />
+                <path d="M11 18.5h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+              </svg>
+              Tablet
+            </button>
+            <button type="button" data-device="desktop" aria-pressed="false">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16">
+                <rect x="3" y="4" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.6" />
+                <path d="M9 20h6M12 17v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+              </svg>
+              Desktop
+            </button>
+          </div>
+
+          <div class="carousel">
+            <button type="button" class="carousel-arrow carousel-prev" aria-label="Forrige skærmbillede" aria-controls="shots-track">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22">
+                <path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button type="button" class="carousel-arrow carousel-next" aria-label="Næste skærmbillede" aria-controls="shots-track">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22">
+                <path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <ul id="shots-track" class="shots-grid" data-device="mobile" role="list">
             <li class="shot">
-              <picture class="shot-img">
+              <picture
+                class="shot-img"
+                data-slug="reports-list"
+                data-mobile-w="500" data-mobile-h="1022"
+                data-tablet-w="600" data-tablet-h="832"
+                data-desktop-w="900" data-desktop-h="516"
+              >
                 <source type="image/avif" srcset="/assets/screenshots/reports-list-500.avif" />
                 <source type="image/webp" srcset="/assets/screenshots/reports-list-500.webp" />
                 <img
@@ -2023,7 +2183,13 @@ button {
             </li>
 
             <li class="shot">
-              <picture class="shot-img">
+              <picture
+                class="shot-img"
+                data-slug="report-create"
+                data-mobile-w="500" data-mobile-h="1022"
+                data-tablet-w="600" data-tablet-h="832"
+                data-desktop-w="900" data-desktop-h="516"
+              >
                 <source type="image/avif" srcset="/assets/screenshots/report-create-500.avif" />
                 <source type="image/webp" srcset="/assets/screenshots/report-create-500.webp" />
                 <img
@@ -2040,7 +2206,13 @@ button {
             </li>
 
             <li class="shot">
-              <picture class="shot-img">
+              <picture
+                class="shot-img"
+                data-slug="report-fill-status"
+                data-mobile-w="500" data-mobile-h="1022"
+                data-tablet-w="600" data-tablet-h="832"
+                data-desktop-w="900" data-desktop-h="516"
+              >
                 <source type="image/avif" srcset="/assets/screenshots/report-fill-status-500.avif" />
                 <source type="image/webp" srcset="/assets/screenshots/report-fill-status-500.webp" />
                 <img
@@ -2057,7 +2229,13 @@ button {
             </li>
 
             <li class="shot">
-              <picture class="shot-img">
+              <picture
+                class="shot-img"
+                data-slug="report-fill-photo"
+                data-mobile-w="500" data-mobile-h="1022"
+                data-tablet-w="600" data-tablet-h="832"
+                data-desktop-w="900" data-desktop-h="516"
+              >
                 <source type="image/avif" srcset="/assets/screenshots/report-fill-photo-500.avif" />
                 <source type="image/webp" srcset="/assets/screenshots/report-fill-photo-500.webp" />
                 <img
@@ -2074,7 +2252,13 @@ button {
             </li>
 
             <li class="shot">
-              <picture class="shot-img">
+              <picture
+                class="shot-img"
+                data-slug="report-send"
+                data-mobile-w="500" data-mobile-h="1022"
+                data-tablet-w="600" data-tablet-h="832"
+                data-desktop-w="900" data-desktop-h="516"
+              >
                 <source type="image/avif" srcset="/assets/screenshots/report-send-500.avif" />
                 <source type="image/webp" srcset="/assets/screenshots/report-send-500.webp" />
                 <img
@@ -2091,7 +2275,13 @@ button {
             </li>
 
             <li class="shot">
-              <picture class="shot-img">
+              <picture
+                class="shot-img"
+                data-slug="customer-detail"
+                data-mobile-w="500" data-mobile-h="1022"
+                data-tablet-w="600" data-tablet-h="832"
+                data-desktop-w="900" data-desktop-h="516"
+              >
                 <source type="image/avif" srcset="/assets/screenshots/customer-detail-500.avif" />
                 <source type="image/webp" srcset="/assets/screenshots/customer-detail-500.webp" />
                 <img
@@ -2108,7 +2298,13 @@ button {
             </li>
 
             <li class="shot">
-              <picture class="shot-img">
+              <picture
+                class="shot-img"
+                data-slug="settings-templates"
+                data-mobile-w="500" data-mobile-h="1022"
+                data-tablet-w="600" data-tablet-h="832"
+                data-desktop-w="900" data-desktop-h="516"
+              >
                 <source type="image/avif" srcset="/assets/screenshots/settings-templates-500.avif" />
                 <source type="image/webp" srcset="/assets/screenshots/settings-templates-500.webp" />
                 <img
@@ -2125,7 +2321,13 @@ button {
             </li>
 
             <li class="shot">
-              <picture class="shot-img">
+              <picture
+                class="shot-img"
+                data-slug="settings-company"
+                data-mobile-w="500" data-mobile-h="1022"
+                data-tablet-w="600" data-tablet-h="832"
+                data-desktop-w="900" data-desktop-h="516"
+              >
                 <source type="image/avif" srcset="/assets/screenshots/settings-company-500.avif" />
                 <source type="image/webp" srcset="/assets/screenshots/settings-company-500.webp" />
                 <img
@@ -2140,7 +2342,8 @@ button {
                 <p>Logo, farver og firmaoplysninger — gennem hele rapporten.</p>
               </div>
             </li>
-          </ul>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -2516,6 +2719,68 @@ button {
 
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
+
+      (function () {
+        var grid = document.querySelector('.shots-grid');
+        var toggle = document.querySelector('.device-toggle');
+        var prev = document.querySelector('.carousel-prev');
+        var next = document.querySelector('.carousel-next');
+        if (!grid || !toggle) return;
+        var buttons = toggle.querySelectorAll('button[data-device]');
+        var sizes = { mobile: '500', tablet: 'tablet-600', desktop: 'desktop-900' };
+
+        function updateArrows() {
+          if (!prev || !next) return;
+          var padLeft = parseFloat(getComputedStyle(grid).paddingLeft) || 0;
+          prev.disabled = grid.scrollLeft <= padLeft + 2;
+          next.disabled = grid.scrollLeft + grid.clientWidth >= grid.scrollWidth - 2;
+        }
+        function itemStep() {
+          var first = grid.querySelector('.shot');
+          if (!first) return grid.clientWidth;
+          var style = getComputedStyle(grid);
+          var gap = parseFloat(style.columnGap || style.gap) || 0;
+          return first.getBoundingClientRect().width + gap;
+        }
+        function scrollBy(dir) {
+          var behavior = matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+          grid.scrollBy({ left: dir * itemStep(), behavior: behavior });
+        }
+        function setDevice(device) {
+          if (!sizes[device]) return;
+          grid.dataset.device = device;
+          buttons.forEach(function (b) {
+            var active = b.dataset.device === device;
+            b.classList.toggle('is-active', active);
+            b.setAttribute('aria-pressed', active ? 'true' : 'false');
+          });
+          grid.querySelectorAll('picture.shot-img').forEach(function (pic) {
+            var slug = pic.dataset.slug;
+            var size = sizes[device];
+            var avif = '/assets/screenshots/' + slug + '-' + size + '.avif';
+            var webp = '/assets/screenshots/' + slug + '-' + size + '.webp';
+            var srcs = pic.querySelectorAll('source');
+            if (srcs[0]) srcs[0].srcset = avif;
+            if (srcs[1]) srcs[1].srcset = webp;
+            var img = pic.querySelector('img');
+            if (img) {
+              img.width = pic.dataset[device + 'W'];
+              img.height = pic.dataset[device + 'H'];
+              img.src = webp;
+            }
+          });
+          grid.scrollTo({ left: 0, behavior: 'auto' });
+          requestAnimationFrame(updateArrows);
+        }
+        buttons.forEach(function (b) {
+          b.addEventListener('click', function () { setDevice(b.dataset.device); });
+        });
+        if (prev) prev.addEventListener('click', function () { scrollBy(-1); });
+        if (next) next.addEventListener('click', function () { scrollBy(1); });
+        grid.addEventListener('scroll', updateArrows, { passive: true });
+        window.addEventListener('resize', updateArrows);
+        updateArrows();
+      })();
     </script>
     <script defer src="https://umami.robert-jensen.dk/script.js" data-website-id="39882bf2-3493-429b-bb09-25e00528822a"></script>
   </body>

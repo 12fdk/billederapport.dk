@@ -139,12 +139,14 @@ Phone mock uses a custom `44px` outer / `32px` inner radius.
 - `.plan-amount` 2.5rem 800-weight, `.plan-unit` muted.
 - Checklist items prefixed by a CSS-drawn accent checkmark (rotated borders, no icon font).
 
-### Screenshots gallery (`.shots-grid`)
+### Screenshots gallery / carousel (`.carousel` + `.shots-grid`)
 - Sits between the **Why** section and **Pricing**, with `.section-alt` background.
-- Grid: `repeat(auto-fit, minmax(220px, 1fr))`, max-width `1080px`, gap `3rem 1.5rem`. Renders as 4 cols on desktop, 3 cols on ~tablet, 1 col on mobile.
-- Each `.shot` is a framed iPhone `<picture>` (AVIF + WebP, lazy-loaded, 500px wide intrinsic) plus a centred `.shot-caption` with `<h3>` title + 1-line `<p>` description (≤ 15 words, ≤ 32ch).
-- No card chrome — just `filter: drop-shadow(...)` on `.shot-img` so the shadow follows the rounded phone outline. Hands-off styling: the framed PNGs carry the visual weight.
-- Source PNGs live in the app repo under `tests/screenshots/output-framed/iphone-16-pro/…`. Pre-resize new ones to 500px wide and encode AVIF + WebP — keep total gallery weight under ~300 KB per format.
+- A pill-style `.device-toggle` above the carousel switches between **Mobil / Tablet / Desktop** by rewriting each `<picture>`'s `srcset`. Each `.shot` carries `data-mobile-*`, `data-tablet-*`, `data-desktop-*` attributes the script reads from.
+- The `.shots-grid` itself is a horizontal flex carousel (not a grid) with `scroll-snap-type: x mandatory`. Visible-item counts per device: **3 mobile / 2 tablet / 1 desktop**, computed as `flex: 0 0 max(<floor>, calc((100% - <gap-sum>) / N))` so very narrow viewports fall back to a minimum item width and the rest scrolls.
+- Round `.carousel-arrow` buttons sit on the left/right edges of `.carousel` (44×44, paper-on-paper at rest, ink-on-paper on hover). Disabled when at the start/end. They scroll the track by one item via `scrollBy`. Respects `prefers-reduced-motion` by switching to instant scroll.
+- Each `.shot` is a framed device `<picture>` (AVIF + WebP, lazy-loaded) plus a centred `.shot-caption` with `<h3>` title + 1-line `<p>` description (≤ 15 words, ≤ 32ch).
+- No card chrome — just `filter: drop-shadow(...)` on `.shot-img` so the shadow follows the rounded device outline. The framed PNGs carry the visual weight.
+- Source PNGs live in the app repo under `tests/screenshots/output-framed/{iphone-16-pro,ipad-pro,desktop}/…`. Pre-resize new ones to 500/600/900 px wide respectively and encode AVIF + WebP. Keep per-form-factor weight under ~250 KB per format.
 
 ### FAQ
 - `<details>` / `<summary>` per item, no JS toggles. Sits in a `.section-alt` background so the white `--surface` items pop.
