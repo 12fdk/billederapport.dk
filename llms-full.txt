@@ -31,7 +31,7 @@ Bruges til alle slags inspektioner og dokumentation — ejendom, skader & forsik
 
 ## Funktioner
 
-Alt du skal bruge — intet du ikke skal bruge. Lavet sammen med folk der faktisk laver rapporter til daglig. Ingen CRM-bloat, ingen træningsweekender. Bare fotorapporter der er færdige inden du forlader stedet.
+Alt du skal bruge — intet du ikke skal bruge. Lavet sammen med folk der laver rapporter til daglig. Intet unødigt fedt. En simpel løsning, der gør én ting — men gør det godt: laver pæne rapporter til dine kunder med dine oplysninger, sparer dig tid, og giver kunderne et mere professionelt indtryk af dig.
 
 - **Foto med annotering** — tag billeder direkte fra telefonen. Tegn cirkler, pile og tekst oven på, og tidsstemplet brændes ind i billedet.
 - **Offline-klar** — alt gemmes lokalt og synkroniseres automatisk når du er online igen.
