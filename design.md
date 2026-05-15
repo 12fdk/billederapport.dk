@@ -106,14 +106,15 @@ Phone mock uses a custom `44px` outer / `32px` inner radius.
 ### Hero
 - Two-column grid above `900px` (`1.05fr 1fr`), single-column below.
 - Background uses two layered radial accent gradients (top-left bigger, top-right faint).
-- Right column is the **phone mock** (`.phone` / `.phone-screen`) with a rotated 2° tilt that flattens at `≤480px` and under `prefers-reduced-motion`.
+- Right column is a **real framed iPhone screenshot** (`.phone` wraps a `<picture>` with AVIF + WebP). The phone is rotated `-2°`; the tilt flattens at `≤480px` and under `prefers-reduced-motion`. Drop-shadow comes from `filter: drop-shadow(...)` so the rounded phone frame casts a soft, frame-shaped shadow (not a rectangle).
+- The image is eager + `fetchpriority="high"` because it's the LCP element. Source PNGs (1350×2760, ~500 KB each) are pre-resized to 720px wide and encoded as AVIF (~26 KB) and WebP (~40 KB).
 - A floating "PDF sendt" `.hero-card` overlaps the bottom-left of the phone above `900px`; stacks below the phone on smaller widths.
 - Trust points: bullet list with accent checkmark SVGs.
 
-### Phone mock
-- Dark `#0e1520` chassis, inner notch at top, paper screen.
-- Inside the screen: header row (orange dot + title + "Kladde" badge), section titles in uppercase muted micro-caps, white question rows with pill answers (green `pill-ok` / orange `pill-no`), a mock photo block with a circle + arrow annotation in `--accent`, a timestamp tag, and an accent CTA at the bottom.
-- Pure CSS — no images, no JS. Keep it that way; the mock has to render instantly for LCP.
+### Phone screenshot (`.phone`)
+- Container for a single framed iPhone screenshot in the hero. Just a `<picture>` wrapper — no chassis or notch in CSS; the frame is baked into the source PNG.
+- `filter: drop-shadow(...)` (not `box-shadow`) so the soft shadow follows the rounded phone outline.
+- Source images live in `assets/screenshots/` and come from the app repo's framed Playwright shots (`output-framed/iphone-16-pro/…`). Don't bake a phone frame in CSS again; the framed PNGs are the canonical source.
 
 ### Strip / social proof
 - Thin band, `--surface-2` background, top/bottom borders.
@@ -138,8 +139,15 @@ Phone mock uses a custom `44px` outer / `32px` inner radius.
 - `.plan-amount` 2.5rem 800-weight, `.plan-unit` muted.
 - Checklist items prefixed by a CSS-drawn accent checkmark (rotated borders, no icon font).
 
+### Screenshots gallery (`.shots-grid`)
+- Sits between the **Why** section and **Pricing**, with `.section-alt` background.
+- Grid: `repeat(auto-fit, minmax(220px, 1fr))`, max-width `1080px`, gap `3rem 1.5rem`. Renders as 4 cols on desktop, 3 cols on ~tablet, 1 col on mobile.
+- Each `.shot` is a framed iPhone `<picture>` (AVIF + WebP, lazy-loaded, 500px wide intrinsic) plus a centred `.shot-caption` with `<h3>` title + 1-line `<p>` description (≤ 15 words, ≤ 32ch).
+- No card chrome — just `filter: drop-shadow(...)` on `.shot-img` so the shadow follows the rounded phone outline. Hands-off styling: the framed PNGs carry the visual weight.
+- Source PNGs live in the app repo under `tests/screenshots/output-framed/iphone-16-pro/…`. Pre-resize new ones to 500px wide and encode AVIF + WebP — keep total gallery weight under ~300 KB per format.
+
 ### FAQ
-- `<details>` / `<summary>` per item, no JS toggles.
+- `<details>` / `<summary>` per item, no JS toggles. Sits in a `.section-alt` background so the white `--surface` items pop.
 - Chevron rotates 180° on `[open]`, color shifts to `--accent-text`. Open state tints the border and upgrades to `--shadow`.
 - Focus outline on summary uses the accent ring at 2px offset.
 
@@ -293,7 +301,7 @@ Static cards rest on a 1px border + the `--surface` swap. They gain `--shadow` o
 
 ### Section rhythm
 
-Adjacent full-width sections must alternate background between `--bg` and `--surface-2` (via `.section-alt`). Two `--bg` sections in a row collapse the visual rhythm. Current order — hero → strip(alt) → features → how(alt) → why → pricing(alt) → faq → cta — already does this; preserve it when reordering.
+Adjacent full-width sections must alternate background between `--bg` and `--surface-2` (via `.section-alt`). Two `--bg` sections in a row collapse the visual rhythm. Current order — hero → strip(alt) → features → how(alt) → why → skaermbilleder(alt) → pricing → faq(alt) → cta — already does this; preserve it when reordering.
 
 ### Copy length budgets
 
