@@ -126,6 +126,10 @@ Nej. Billederapport er en progressive web app (PWA), som kører direkte i browse
 
 Ja. Billederapport kører på alle moderne iPhones, Android-telefoner og tablets — du skal bare bruge en opdateret browser (Safari på iPhone/iPad, Chrome på Android). På tablet får du et lidt større layout, men funktionerne er de samme.
 
+### Kan jeg kun bruge appen fra telefon eller tablet?
+
+Nej. Appen virker fra alt, der kan køre en browser — så du kan lave rapporten ude hos kunden på din telefon eller tablet, redigere den hjemme foran computeren, og sende den når du er klar. Alle funktioner virker på alle enheder, så det er op til dig, hvordan du vil arbejde.
+
 ### Kan jeg lave mine egne rapporter?
 
 Ja. Du kan lave dine helt egne rapporter, som kan bruges af alle medlemmer af dit firma. Vi hjælper også gerne, hvis der er en specifik rapport, du synes mangler, blandt vores standard-skabeloner.
