@@ -16,6 +16,7 @@
 ## Key URLs
 
 - [Marketing home (Danish)](https://billederapport.dk/): Product overview, features, how it works, pricing, FAQ.
+- [Skadesrapport-app (Danish)](https://billederapport.dk/skadesrapport-app/): Use-case page for damage assessment, insurance and skadesservice — timestamped photos, offline, branded PDF to customer and insurer.
 - [Web app](https://app.billederapport.dk): The Billederapport application — sign in or start the 14-day trial.
 - [Sign up](https://app.billederapport.dk/signup): Start a 14-day free trial without a credit card.
 - [Sign in](https://app.billederapport.dk/login): Sign in to an existing account.
