@@ -110,6 +110,10 @@ Ja. Alle data og billeder hostes i EU, og Billederapport er bygget efter GDPR. D
 
 Nej. Billederapport er en progressive web app (PWA), som kører direkte i browseren på app.billederapport.dk. Du kan tilføje den til hjemmeskærmen med ét tryk, så den fungerer præcis som en almindelig app — uden app-store, uden opdateringer at huske.
 
+### Kan jeg lave mine egne rapporter?
+
+Ja. Du kan lave dine helt egne rapporter, som kan bruges af alle medlemmer af dit firma. Vi hjælper også gerne, hvis der er en specifik rapport, du synes mangler, blandt vores standard-skabeloner.
+
 ### Kan jeg sende rapporten med mit eget logo og firmanavn?
 
 Ja. PDF-rapporten brander automatisk med dit logo, dine farver og dine kontaktoplysninger, så kunden modtager en professionel rapport, der ligner den kommer fra dit firma — ikke fra Billederapport.
