@@ -73,16 +73,6 @@ Fordi du skal videre til næste opgave — ikke bruge aftenen på rapporter. Vi 
 - **Anmeldelser indbygget.** Opret dit link til anmeldelser, og få det tilføjet til alle rapporter, så kunderne nemt kan give dig gode anmeldelser.
 - **Dansk sprog og dansk support.** Vi svarer på dansk, og prisen er i DKK.
 
-## Rapporten
-
-Den færdige PDF — pænt, brandet, klar til at sende. Når besøget er færdigt, får kunden en rapport som denne med dit logo, kontaktoplysninger, billeder med tekst og en oversigt over hvad der haster.
-
-- **Forside** — logo, kunde, resumé.
-- **Punkter med billeder** — hvert tjekpunkt med foto og note.
-- **Alvor markeret** — kritiske fund springer i øjnene.
-
-Eksempel-rapport (PDF, 4 sider, 1,7 MB): https://billederapport.dk/assets/report/Bygningsgennemgang_Sokrogvej_7.pdf
-
 ## Pris
 
 **Én pris. Alt inkluderet.** Kun ét valg, der indeholder alt det du skal bruge fra dag ét — prøv det gratis i 14 dage, uden at hive dankortet frem.
