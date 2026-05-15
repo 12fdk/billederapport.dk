@@ -90,6 +90,14 @@ Ja. Billederapport er bygget offline-først, så du kan tage billeder, udfylde t
 
 Billederapport koster 199 kr/md ekskl. moms — én pris med ubegrænset antal rapporter, fotos, skabeloner og kunder. Der er 14 dages gratis prøve uden kreditkort, og du kan opsige når som helst.
 
+### Hvad sker der efter de 14 dages prøve?
+
+Ingenting automatisk. Vi beder ikke om et kort før prøven starter, så du bliver hverken trukket eller bundet til noget. Når de 14 dage er gået, vælger du selv om du vil oprette et abonnement og fortsætte — eller bare lukke kontoen.
+
+### Koster det ekstra at have flere kolleger med?
+
+Nej. Du kan have alle de brugere og kolleger, du har brug for, inden for samme firma, uden det koster ekstra. De 199 kr/md gælder hele firmaet.
+
 ### Hvem bruger Billederapport?
 
 Billederapport bruges af håndværkere, inspektører, bygningssagkyndige, ejendomsadministratorer, skadesservice og rådgivende tilsynsfolk i Danmark. Det er især lavet til selvstændige og små teams, der laver fotorapporter eller skadesrapporter på telefonen som en del af deres daglige arbejde.
@@ -106,9 +114,17 @@ Nej. Dine rapporter, billeder og kundedata tilhører dig. Vi læser dem ikke, s�
 
 Ja. Alle data og billeder hostes i EU, og Billederapport er bygget efter GDPR. Du kan til enhver tid eksportere eller slette alle data fra din konto med ét klik, og der indgås databehandleraftale ved oprettelse af firma-konto.
 
+### Hvad sker der med mine data, hvis jeg stopper abonnementet?
+
+Vi gemmer dine data i 365 dage efter abonnementet er udløbet, så du har god tid til at hente det, du skal bruge. Du kan til enhver tid bestille en eksport af alle dine rapporter og billeder, hvis du ikke nåede det inden udløb.
+
 ### Skal jeg installere en app fra App Store eller Google Play?
 
 Nej. Billederapport er en progressive web app (PWA), som kører direkte i browseren på app.billederapport.dk. Du kan tilføje den til hjemmeskærmen med ét tryk, så den fungerer præcis som en almindelig app — uden app-store, uden opdateringer at huske.
+
+### Virker det på iPhone, Android og tablet?
+
+Ja. Billederapport kører på alle moderne iPhones, Android-telefoner og tablets — du skal bare bruge en opdateret browser (Safari på iPhone/iPad, Chrome på Android). På tablet får du et lidt større layout, men funktionerne er de samme.
 
 ### Kan jeg lave mine egne rapporter?
 
@@ -118,6 +134,26 @@ Ja. Du kan lave dine helt egne rapporter, som kan bruges af alle medlemmer af di
 
 Ja. PDF-rapporten brander automatisk med dit logo, dine farver og dine kontaktoplysninger, så kunden modtager en professionel rapport, der ligner den kommer fra dit firma — ikke fra Billederapport.
 
+### Kan kunden underskrive rapporten?
+
+Rapporten bliver sendt til kunden som PDF, som de selv kan udskrive og underskrive. Kunden har ikke adgang til appen, så der er ingen ekstra konti, du skal hjælpe dem med.
+
+### Kan jeg sende rapporten til flere på én gang?
+
+Ja. Du kan tilføje flere modtagere på samme rapport, så alle får den samme PDF — hver gang rapporten bliver sendt.
+
+### Kan man se, hvem der har lavet en rapport?
+
+Ja. Hver rapport bliver mærket med den medarbejder, der har lavet den — både i selve PDF-en til kunden og i oversigten inde i appen.
+
+### Kan jeg redigere en rapport efter den er sendt?
+
+Ja. Rapporten ligger i din konto, så du kan altid åbne den igen, rette eller tilføje noget, og sende en opdateret PDF. Den PDF, kunden allerede har modtaget, ændrer sig ikke i deres mail — de får simpelthen en ny version.
+
 ### Hvad hvis jeg mangler funktionalitet i appen?
 
 Den eneste måde vi kan gøre produktet bedre på, er ved at høre fra jer der bruger det. Så vi er meget lydhøre over for mangler, nye funktioner og forslag i øvrigt. Vi kan selvfølgelig ikke love at vi kan fikse alt, men vi lover at gøre vores bedste. Du kan sende feedback direkte fra appen, når du er logget ind.
+
+### Hvordan får jeg hjælp, hvis noget driller?
+
+Skriv til os direkte fra appen — der er en feedback-knap, når du er logget ind. Vi sidder selv i Danmark og svarer på dansk, så du får hjælp fra en der kender produktet ind og ud.
