@@ -96,7 +96,7 @@ Billederapport bruges af håndværkere, inspektører, bygningssagkyndige, ejendo
 
 ### Hvem står bag Billederapport — og kan I se mine kundedata?
 
-Billederapport er en uafhængig dansk SaaS, drevet af en lille dansk udvikler — vi er ikke ejet af, eller en del af, en håndværker-, inspektions-, forsikrings- eller administrationsvirksomhed. Dine rapporter, billeder og kundedata tilhører dig. Vi læser dem ikke, sælger dem ikke, og bruger dem ikke til at træne AI-modeller eller bygge konkurrerende produkter. Vi tjener vores penge på abonnementet — og kun det. Alt ligger i EU efter GDPR, og du kan eksportere eller slette det hele med ét klik.
+Billederapport er en uafhængig dansk SaaS, drevet af 12F ApS (CVR 45362957) — et lille dansk softwarefirma, ikke ejet af, eller en del af, en håndværker-, inspektions-, forsikrings- eller administrationsvirksomhed. Dine rapporter, billeder og kundedata tilhører dig. Vi læser dem ikke, sælger dem ikke, og bruger dem ikke til at træne AI-modeller eller bygge konkurrerende produkter. Vi tjener vores penge på abonnementet — og kun det. Alt ligger i EU efter GDPR, og du kan eksportere eller slette det hele med ét klik.
 
 ### Er Billederapport GDPR-venlig?
 
