@@ -633,6 +633,8 @@ button {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
 }
 .step-num {
   position: absolute;
@@ -649,12 +651,27 @@ button {
   font-weight: 700;
   font-size: 0.95rem;
   box-shadow: 0 4px 10px rgba(26, 35, 50, 0.25);
+  z-index: 1;
 }
 @media (prefers-color-scheme: dark) {
   .step-num {
     background: var(--accent);
     color: #fff;
   }
+}
+.step-img {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0.5rem auto 1.5rem;
+  filter:
+    drop-shadow(0 10px 20px rgba(26, 35, 50, 0.18))
+    drop-shadow(0 3px 6px rgba(26, 35, 50, 0.08));
+}
+.step-img img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .step h3 {
   margin-bottom: 0.45rem;
@@ -1956,6 +1973,16 @@ button {
           <ol class="steps">
             <li class="step">
               <div class="step-num">1</div>
+              <picture class="step-img">
+                <source type="image/avif" srcset="/assets/screenshots/report-create-500.avif" />
+                <source type="image/webp" srcset="/assets/screenshots/report-create-500.webp" />
+                <img
+                  src="/assets/screenshots/report-create-500.webp"
+                  alt="Skærmbillede: Opret ny rapport — vælg kunde og skabelon."
+                  width="500" height="1022"
+                  loading="lazy" decoding="async"
+                />
+              </picture>
               <h3>Vælg kunde og skabelon</h3>
               <p>
                 Åbn appen på telefonen, vælg kunden, og start en ny rapport ud
@@ -1964,6 +1991,16 @@ button {
             </li>
             <li class="step">
               <div class="step-num">2</div>
+              <picture class="step-img">
+                <source type="image/avif" srcset="/assets/screenshots/report-fill-photo-500.avif" />
+                <source type="image/webp" srcset="/assets/screenshots/report-fill-photo-500.webp" />
+                <img
+                  src="/assets/screenshots/report-fill-photo-500.webp"
+                  alt="Skærmbillede: Udfyldt besvarelse med status, beskrivelse og bemærkning."
+                  width="500" height="1022"
+                  loading="lazy" decoding="async"
+                />
+              </picture>
               <h3>Gå i gang på stedet</h3>
               <p>
                 Svar på spørgsmålene, tag billeder, og markér det vigtige med
@@ -1972,6 +2009,16 @@ button {
             </li>
             <li class="step">
               <div class="step-num">3</div>
+              <picture class="step-img">
+                <source type="image/avif" srcset="/assets/screenshots/report-send-500.avif" />
+                <source type="image/webp" srcset="/assets/screenshots/report-send-500.webp" />
+                <img
+                  src="/assets/screenshots/report-send-500.webp"
+                  alt="Skærmbillede: Dialog der sender rapporten til kundens mail."
+                  width="500" height="1022"
+                  loading="lazy" decoding="async"
+                />
+              </picture>
               <h3>Afslut og send</h3>
               <p>
                 Tryk "Afslut". Appen laver en PDF med dit logo og sender den til
