@@ -305,6 +305,19 @@ button {
   opacity: 1;
 }
 
+/* Shared focus ring for non-button interactive elements */
+.link:focus-visible,
+.brand:focus-visible,
+.nav-links a:focus-visible,
+.nav-actions .link:focus-visible,
+.footer-col a:focus-visible,
+.cta-row a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--ring);
+  border-radius: 6px;
+  opacity: 1;
+}
+
 /* ---------- Header ---------- */
 .site-header {
   position: sticky;
@@ -656,6 +669,8 @@ button {
   background: rgba(14, 21, 32, 0.7);
   color: #fff;
   letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum' 1, 'cv11', 'ss01', 'ss03';
 }
 .mock-cta {
   margin-top: auto;
@@ -704,6 +719,8 @@ button {
   font-size: 0.8rem;
   color: var(--text-muted);
   margin-top: 1px;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum' 1, 'cv11', 'ss01', 'ss03';
 }
 
 @media (max-width: 899px) {
@@ -986,6 +1003,8 @@ button {
   font-weight: 800;
   letter-spacing: -0.025em;
   color: var(--text);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum' 1, 'cv11', 'ss01', 'ss03';
 }
 .plan-unit {
   margin-left: 0.35rem;
@@ -1129,7 +1148,6 @@ button {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  box-shadow: var(--shadow-sm);
   overflow: hidden;
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
@@ -1173,6 +1191,7 @@ button {
   padding: 0 22px 22px;
   color: var(--text-muted);
   line-height: 1.65;
+  max-width: 70ch;
 }
 @media (max-width: 600px) {
   .faq-item summary {
