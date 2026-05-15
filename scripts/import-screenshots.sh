@@ -125,4 +125,6 @@ done
 echo
 total_files=$((total * 2))    # avif + webp per encode
 echo "Wrote ${total_files} files (${total} variants × 2 formats) to ${DST#$(pwd)/}/"
-[ "$skipped" -gt 0 ] && echo "Skipped ${skipped} variant(s) — see SKIP lines above."
+if [ "$skipped" -gt 0 ]; then
+  echo "Skipped ${skipped} variant(s) — see SKIP lines above."
+fi
