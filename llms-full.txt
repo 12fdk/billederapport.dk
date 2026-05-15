@@ -117,3 +117,7 @@ Ja. Du kan lave dine helt egne rapporter, som kan bruges af alle medlemmer af di
 ### Kan jeg sende rapporten med mit eget logo og firmanavn?
 
 Ja. PDF-rapporten brander automatisk med dit logo, dine farver og dine kontaktoplysninger, så kunden modtager en professionel rapport, der ligner den kommer fra dit firma — ikke fra Billederapport.
+
+### Hvad hvis jeg mangler funktionalitet i appen?
+
+Den eneste måde vi kan gøre produktet bedre på, er ved at høre fra jer der bruger det. Så vi er meget lydhøre over for mangler, nye funktioner og forslag i øvrigt. Vi kan selvfølgelig ikke love at vi kan fikse alt, men vi lover at gøre vores bedste. Du kan sende feedback direkte fra appen, når du er logget ind.
