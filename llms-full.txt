@@ -152,6 +152,10 @@ Ja. Du kan lave dine helt egne rapporter, som kan bruges af alle medlemmer af di
 
 Ja. PDF-rapporten brander automatisk med dit logo, dine farver og dine kontaktoplysninger, så kunden modtager en professionel rapport, der ligner den kommer fra dit firma — ikke fra Billederapport.
 
+### Kan jeg få mine kunder til at anmelde mig på Trustpilot eller en anden side?
+
+Ja. Du kan tilføje dit eget anmeldelses-link, og det bliver — sammen med en QR-kode — vist på alle dine rapporter. Så kunden nemt kan finde det, når de kigger på rapporten.
+
 ### Kan kunden underskrive rapporten?
 
 Rapporten bliver sendt til kunden som PDF, som de selv kan udskrive og underskrive. Kunden har ikke adgang til appen, så der er ingen ekstra konti, du skal hjælpe dem med.
