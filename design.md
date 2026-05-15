@@ -108,7 +108,6 @@ Phone mock uses a custom `44px` outer / `32px` inner radius.
 - Background uses two layered radial accent gradients (top-left bigger, top-right faint).
 - Right column is a **real framed iPhone screenshot** (`.phone` wraps a `<picture>` with AVIF + WebP). The phone is rotated `-2°`; the tilt flattens at `≤480px` and under `prefers-reduced-motion`. Drop-shadow comes from `filter: drop-shadow(...)` so the rounded phone frame casts a soft, frame-shaped shadow (not a rectangle).
 - The image is eager + `fetchpriority="high"` because it's the LCP element. Source PNGs (1350×2760, ~500 KB each) are pre-resized to 720px wide and encoded as AVIF (~26 KB) and WebP (~40 KB).
-- A floating "PDF sendt" `.hero-card` overlaps the bottom-left of the phone above `900px`; stacks below the phone on smaller widths.
 - Trust points: bullet list with accent checkmark SVGs.
 
 ### Phone screenshot (`.phone`)
@@ -226,7 +225,7 @@ Don't invent intermediate values like `13px` or `1.7rem`. The 4px stops (`4`, `1
 
 - Inter Variable has every weight from 100 to 900 — that's a trap. Use **only**: 400 (body), 500 (links/labels), 600 (eyebrow / nav / button), 700 (headings). Anything heavier than 700 is reserved for the plan price (currently 800).
 - **No more than three distinct weights in a single section.** If a section already uses 400/600/700, don't add 500 just to nudge a label.
-- **Tabular numerals** for any aligned numerics (price `199`, timestamps like `kl. 10:34`, dates like `24-04-2026`). Add `font-feature-settings: 'tnum' 1, 'cv11', 'ss01', 'ss03';` to `.plan-amount`, `.photo-timestamp`, `.hero-card-sub`, and any future stats. Without `tnum`, Inter's proportional digits make prices look wobbly.
+- **Tabular numerals** for any aligned numerics (price `199`, dates like `24-04-2026`). Add `font-feature-settings: 'tnum' 1, 'cv11', 'ss01', 'ss03';` to `.plan-amount` and any future stats. Without `tnum`, Inter's proportional digits make prices look wobbly.
 
 ### Prose width
 
