@@ -12,7 +12,7 @@
 
 ## Hero
 
-**Pæne fotorapporter, færdige på telefonen.**
+**Pæne fotorapporter, direkte på telefonen, mens du er hos kunden.**
 
 Uanset om du inspicerer, dokumenterer skader eller laver tilsyn — tag billeder, tilføj noter, og send en færdig PDF-rapport til kunden på få minutter. Også når der ikke er dækning.
 
@@ -48,11 +48,11 @@ Fra ankomst til afsendt rapport — på den tid det tager at drikke en kop kaffe
 
 1. **Vælg kunde og skabelon** — åbn appen på telefonen, vælg kunden, og start en ny rapport ud fra din egen skabelon.
 2. **Gå i gang på stedet** — svar på spørgsmålene, tag billeder, og markér det vigtige med pile og cirkler. Alt gemmes lokalt.
-3. **Afslut og send** — tryk "Afslut". Appen laver en PDF med dit logo og sender den til kunden. Arkiveret og klar.
+3. **Afslut og send** — tryk "Afslut". Appen laver en PDF med dine firmaoplysninger og sender den til kunden. Arkiveret og klar.
 
 ## Skærmbilleder
 
-Otte skærmbilleder fra den rigtige app, taget på iPhone — fra start til afsendt PDF. Ingen mockups.
+Otte skærmbilleder fra den rigtige app, taget på iPhone — fra start til afsendt rapport. Ingen mockups.
 
 - **Rapporter** — alle dine rapporter samlet ét sted, med søgning og status.
 - **Opret ny rapport** — vælg kunde og skabelon, og kom i gang på sekunder.
