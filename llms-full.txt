@@ -94,9 +94,13 @@ Billederapport koster 199 kr/md ekskl. moms — én pris med ubegrænset antal r
 
 Billederapport bruges af håndværkere, inspektører, bygningssagkyndige, ejendomsadministratorer, skadesservice og rådgivende tilsynsfolk i Danmark. Det er især lavet til selvstændige og små teams, der laver fotorapporter eller skadesrapporter på telefonen som en del af deres daglige arbejde.
 
-### Hvem står bag Billederapport — og kan I se mine kundedata?
+### Hvem står bag Billederapport?
 
-Billederapport er en uafhængig dansk SaaS, drevet af 12F ApS (CVR 45362957) — et lille dansk softwarefirma, ikke ejet af, eller en del af, en håndværker-, inspektions-, forsikrings- eller administrationsvirksomhed. Dine rapporter, billeder og kundedata tilhører dig. Vi læser dem ikke, sælger dem ikke, og bruger dem ikke til at træne AI-modeller eller bygge konkurrerende produkter. Vi tjener vores penge på abonnementet — og kun det. Alt ligger i EU efter GDPR, og du kan eksportere eller slette det hele med ét klik.
+Billederapport drives af 12F ApS (CVR 45362957) — et lille, uafhængigt dansk softwarefirma. Vi er ikke ejet af, eller en del af, en håndværker-, inspektions-, forsikrings- eller administrationsvirksomhed, så du afleverer ikke dine kundedata til en konkurrent i din egen branche. Vi tjener vores penge på abonnementet — og kun det.
+
+### Kan I se mine kundedata eller bruge dem til noget?
+
+Nej. Dine rapporter, billeder og kundedata tilhører dig. Vi læser dem ikke, sælger dem ikke, og bruger dem ikke til at træne AI-modeller eller til at bygge konkurrerende produkter. Du kan til enhver tid eksportere eller slette alle dine data med ét klik.
 
 ### Er Billederapport GDPR-venlig?
 
