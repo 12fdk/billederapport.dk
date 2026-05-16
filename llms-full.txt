@@ -78,10 +78,10 @@ Fordi du skal videre til næste opgave — ikke bruge aftenen på rapporter. Vi 
 Den færdige PDF — pænt, brandet, klar til at sende. Når besøget er færdigt, får kunden en rapport som denne med dit logo, kontaktoplysninger, billeder med tekst og en oversigt over hvad der haster.
 
 - **Forside** — logo, kunde, resumé.
-- **Punkter med billeder** — hvert tjekpunkt med foto og note.
-- **Alvor markeret** — kritiske fund springer i øjnene.
+- **Punkter med billeder** — foto, svar og alvor pr. punkt.
+- **Funktionstest** — resultatet dokumenteret med foto.
 
-Eksempel-rapport (PDF, 4 sider, 1,7 MB): https://billederapport.dk/assets/report/Bygningsgennemgang_Sokrogvej_7.pdf
+Eksempel-rapport (PDF, 3 sider, 2,6 MB): https://billederapport.dk/assets/report/Rottespaerre_servicekontrol_Sokrogvej_7.pdf
 
 ## Pris
 

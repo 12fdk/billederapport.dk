@@ -22,18 +22,17 @@
 
 set -euo pipefail
 
-DEFAULT_SRC="${APP_REPORT_PDF:-/Users/robert/Git/Billederapport/app.billederapport.dk/sites/app/tests/screenshots/demo-report/output/Bygningsgennemgang_Sokrogvej_7.pdf}"
+DEFAULT_SRC="${APP_REPORT_PDF:-/Users/robert/Git/Billederapport/app.billederapport.dk/sites/app/tests/screenshots/demo-report/output/Rottespaerre_servicekontrol_Sokrogvej_7.pdf}"
 SRC="${1:-$DEFAULT_SRC}"
 DST="$(cd "$(dirname "$0")/.." && pwd)/assets/report"
 
 # slug | source-pdf basename pattern | which pages to render (space-separated)
 #
-# Currently only one report. Pages 1, 2, 4 are showcased on the site:
-# 1 = branded cover, 2 = inspection content, 4 = critical-severity example.
-# Page 3 is rendered too so the script stays generic and a follow-up edit
-# can swap which pages the section displays without re-running.
-PAGES="1 2 3 4"
-SLUG="bygningsgennemgang-sokrogvej-7"
+# Currently only one report — a rottespærre (rat barrier) service check.
+# All three pages are rendered and showcased: 1 = branded cover, 2 = service
+# log with photos, 3 = critical-severity example.
+PAGES="1 2 3"
+SLUG="rottespaerre-servicekontrol-sokrogvej-7"
 
 # Render at 200 DPI (≈ 1654×2339 for A4), then resize down. That gives us a
 # crisp source for both the 500w mobile crop and the 1200w desktop crop.

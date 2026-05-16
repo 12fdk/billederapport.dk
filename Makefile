@@ -2,7 +2,7 @@
 
 APP_REPO ?= ../app.billederapport.dk
 APP_FRAMED_DIR ?= $(APP_REPO)/sites/app/tests/screenshots/output-framed
-APP_REPORT_PDF ?= $(APP_REPO)/sites/app/tests/screenshots/demo-report/output/Bygningsgennemgang_Sokrogvej_7.pdf
+APP_REPORT_PDF ?= $(APP_REPO)/sites/app/tests/screenshots/demo-report/output/Rottespaerre_servicekontrol_Sokrogvej_7.pdf
 
 .PHONY: help import-screenshots import-report-pdf serve
 

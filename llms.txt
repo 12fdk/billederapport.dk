@@ -24,6 +24,6 @@
 ## Optional
 
 - [Full content (markdown)](https://billederapport.dk/llms-full.txt): Markdown copy of the marketing page, ready for LLM ingestion.
-- [Sample report (PDF)](https://billederapport.dk/assets/report/Bygningsgennemgang_Sokrogvej_7.pdf): Example of the branded PDF report the app generates — 4-page building inspection, with cover, customer info, photo points, and severity badges.
+- [Sample report (PDF)](https://billederapport.dk/assets/report/Rottespaerre_servicekontrol_Sokrogvej_7.pdf): Example of the branded PDF report the app generates — 3-page rat-barrier service check, with cover, customer info, annotated photo points, and a severity badge.
 - [Sitemap](https://billederapport.dk/sitemap.xml)
 - [robots.txt](https://billederapport.dk/robots.txt)
