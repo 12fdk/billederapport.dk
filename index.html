@@ -295,21 +295,9 @@ button {
   width: 100%;
 }
 
-.link {
-  text-decoration: none;
-  color: var(--text);
-  font-weight: 500;
-  opacity: 0.8;
-}
-.link:hover {
-  opacity: 1;
-}
-
 /* Shared focus ring for non-button interactive elements */
-.link:focus-visible,
 .brand:focus-visible,
 .nav-links a:focus-visible,
-.nav-actions .link:focus-visible,
 .footer-col a:focus-visible,
 .cta-row a:focus-visible {
   outline: none;
@@ -364,13 +352,14 @@ button {
 
 .nav-links {
   display: none;
-  gap: 1.5rem;
-  font-size: 0.95rem;
+  gap: clamp(0.3rem, 0.8vw, 1.5rem);
+  font-size: clamp(0.8125rem, 0.3vw + 0.7rem, 0.95rem);
 }
 .nav-links a {
   text-decoration: none;
   color: var(--text-muted);
   font-weight: 500;
+  white-space: nowrap;
 }
 .nav-links a:hover {
   color: var(--text);
@@ -378,55 +367,15 @@ button {
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-}
-.nav-actions .link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  padding: 0 0.85rem;
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  font-size: 0.9rem;
-  font-weight: 600;
-  opacity: 1;
-  color: var(--text);
-  transition:
-    background-color 0.15s ease,
-    border-color 0.15s ease;
-}
-.nav-actions .link:hover {
-  background: var(--surface-2);
 }
 @media (min-width: 760px) {
   .nav-links {
     display: flex;
   }
-  .nav-actions {
-    gap: 0.75rem;
-  }
-  .nav-actions .link {
-    height: auto;
-    padding: 0;
-    border: none;
-    font-size: 0.95rem;
-    font-weight: 500;
-    opacity: 0.8;
-    border-radius: 0;
-  }
-  .nav-actions .link:hover {
-    background: transparent;
-    opacity: 1;
-  }
 }
 @media (max-width: 399px) {
   .brand-name {
     display: none;
-  }
-  .nav-actions .link {
-    padding: 0 0.7rem;
-    font-size: 0.85rem;
   }
   .btn {
     padding: 0 0.85rem;
@@ -1528,13 +1477,14 @@ button {
         <nav aria-label="Hovedmenu" class="nav-links">
           <a href="#features">Funktioner</a>
           <a href="#how">Sådan virker det</a>
+          <a href="#hvorfor">Hvorfor</a>
           <a href="#skaermbilleder">Skærmbilleder</a>
+          <a href="#rapport">Rapport</a>
           <a href="#pricing">Pris</a>
           <a href="#faq">FAQ</a>
         </nav>
 
         <div class="nav-actions">
-          <a class="link" href="https://app.billederapport.dk/login">Log ind</a>
           <a class="btn btn-primary" href="https://app.billederapport.dk" target="_blank" rel="noopener">Åbn app →</a>
         </div>
       </div>
@@ -2096,7 +2046,7 @@ button {
       </section>
 
       <!-- WHY -->
-      <section class="section">
+      <section id="hvorfor" class="section">
         <div class="container why-grid">
           <div class="why-copy">
             <p class="eyebrow">Hvorfor Billederapport</p>
