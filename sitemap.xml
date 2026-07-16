@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://billederapport.dk/</loc>
-    <lastmod>2026-05-15</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="da-DK" href="https://billederapport.dk/" />
@@ -11,7 +11,7 @@
   </url>
   <url>
     <loc>https://billederapport.dk/skadesrapport-app/</loc>
-    <lastmod>2026-05-15</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="da-DK" href="https://billederapport.dk/skadesrapport-app/" />
