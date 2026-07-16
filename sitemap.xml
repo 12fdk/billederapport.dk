@@ -17,4 +17,28 @@
     <xhtml:link rel="alternate" hreflang="da-DK" href="https://billederapport.dk/skadesrapport-app/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://billederapport.dk/skadesrapport-app/" />
   </url>
+  <url>
+    <loc>https://billederapport.dk/servicerapport-app/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://billederapport.dk/servicerapport-app/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billederapport.dk/servicerapport-app/" />
+  </url>
+  <url>
+    <loc>https://billederapport.dk/ks-dokumentation/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://billederapport.dk/ks-dokumentation/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billederapport.dk/ks-dokumentation/" />
+  </url>
+  <url>
+    <loc>https://billederapport.dk/rottespaerre-servicerapport/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://billederapport.dk/rottespaerre-servicerapport/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billederapport.dk/rottespaerre-servicerapport/" />
+  </url>
 </urlset>
