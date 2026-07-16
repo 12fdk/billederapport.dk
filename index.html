@@ -525,6 +525,22 @@ button {
   color: var(--accent-text);
   flex: 0 0 auto;
 }
+.strip-icons a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: inherit;
+  text-decoration: none;
+}
+.strip-icons a:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+.strip-icons a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--ring);
+  border-radius: 6px;
+}
 
 /* ---------- Features ---------- */
 .feature-grid {
@@ -1647,7 +1663,7 @@ button {
               </svg>
               Ejendom
             </li>
-            <li>
+            <li><a href="/skadesrapport-app/" aria-label="Skadesrapport-app til skader og forsikring">
               <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
                 <path
                   d="M12 3 4 6v6c0 4.5 3.2 8.4 8 9 4.8-.6 8-4.5 8-9V6l-8-3Z"
@@ -1666,8 +1682,8 @@ button {
                 />
               </svg>
               Skader &amp; forsikring
-            </li>
-            <li>
+            </a></li>
+            <li><a href="/ks-dokumentation/" aria-label="KS-dokumentation til byggeri">
               <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
                 <path
                   d="M4 14c1.5-5 4.5-8 8-8s6.5 3 8 8"
@@ -1693,8 +1709,8 @@ button {
                 />
               </svg>
               Byggeri
-            </li>
-            <li>
+            </a></li>
+            <li><a href="/servicerapport-app/" aria-label="Servicerapport-app til service og vedligehold">
               <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
                 <path
                   d="M14.7 6.3a4 4 0 0 1 5 5l-2.6-.7-1.7 1.7.7 2.6a4 4 0 0 1-5-5l2.6.7 1.7-1.7-.7-2.6Z"
@@ -1713,7 +1729,7 @@ button {
                 />
               </svg>
               Service &amp; vedligehold
-            </li>
+            </a></li>
             <li>
               <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
                 <rect

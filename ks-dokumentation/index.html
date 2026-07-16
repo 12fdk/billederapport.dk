@@ -938,6 +938,18 @@ button {
 .why-list strong {
   color: var(--text);
 }
+.why-list a {
+  color: var(--accent-text);
+  text-decoration: none;
+}
+.why-list a:hover {
+  text-decoration: underline;
+}
+.why-list a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--ring);
+  border-radius: 6px;
+}
 
 /* ---------- Plans ---------- */
 .plans {
@@ -1806,6 +1818,9 @@ button {
                 <strong>Uafhængigt dansk firma.</strong> Billederapport drives
                 af 12F ApS. Vi er ikke ejet af en entreprenørkoncern eller andre
                 i din branche — dine sager går ikke videre til nogen.
+              </li>
+              <li>
+                <strong>Også efter afleveringen.</strong> Samme app laver <a href="/servicerapport-app/">servicerapporter</a> i driftsfasen og <a href="/skadesrapport-app/">skadesrapporter</a>, når noget går galt — én pris for det hele.
               </li>
             </ul>
           </div>

@@ -938,6 +938,18 @@ button {
 .why-list strong {
   color: var(--text);
 }
+.why-list a {
+  color: var(--accent-text);
+  text-decoration: none;
+}
+.why-list a:hover {
+  text-decoration: underline;
+}
+.why-list a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--ring);
+  border-radius: 6px;
+}
 
 /* ---------- Plans ---------- */
 .plans {
@@ -1984,6 +1996,9 @@ button {
                 <strong>Designet til feltet.</strong> Mobil-først, store
                 knapper, virker med handsker og i fugtige miljøer. Ingen
                 desktop-software, der også kan bruges på telefonen.
+              </li>
+              <li>
+                <strong>Også til service og KS.</strong> Samme app laver <a href="/servicerapport-app/">servicerapporter</a> og <a href="/ks-dokumentation/">KS-dokumentation</a> — én pris for det hele.
               </li>
             </ul>
           </div>
