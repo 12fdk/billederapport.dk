@@ -189,3 +189,23 @@ Den eneste måde vi kan gøre produktet bedre på, er ved at høre fra jer der b
 ### Hvordan får jeg hjælp, hvis noget driller?
 
 Skriv til os direkte fra appen — der er en feedback-knap, når du er logget ind. Vi sidder selv i Danmark og svarer på dansk, så du får hjælp fra en der kender produktet ind og ud.
+
+## Løsninger — use-case sider
+
+Billederapport har dedikerede sider for de vigtigste brancher. Kernefunktionerne er de samme (foto med annotering og tidsstempel, tjeklister, offline-tilstand, branded PDF, 199 kr/md ekskl. moms for hele firmaet); hver side beskriver arbejdsgangen for sin målgruppe.
+
+### Skadesrapport-app — <https://billederapport.dk/skadesrapport-app/>
+
+Til skadesservice, forsikring og taksation. "Skadesrapport-app til forsikring, taksation og skadesservice." Dokumentér skaden på stedet med tidsstemplede billeder (EXIF bevares), og send én branded PDF til kunde, forsikringsselskab og evt. taksator i samme afsendelse — før du forlader adressen. Virker offline i kældre, på lofter og brandsteder. Rapporten fungerer som bevismateriale: tidsstempel brændes ind, metadata bevares, og GDPR/databehandleraftale er på plads til billeder af private hjem.
+
+### Servicerapport-app — <https://billederapport.dk/servicerapport-app/>
+
+Til serviceteknikere: VVS-service, ventilation, varmepumper, portservice, hvidevarer. "Servicerapporten er sendt, inden du kører videre." Fast tjekliste pr. anlægstype, billeder af det udførte arbejde, og en PDF-kvittering til kunden med det samme. Historik pr. kunde og anlæg, så sidste servicebesøg er ved hånden ved genbesøg. Virker uden dækning i teknikrum og kældre.
+
+### KS-dokumentation — <https://billederapport.dk/ks-dokumentation/>
+
+Til kvalitetssikring i byggeriet: tømrer, murer, VVS, el, entreprise. "KS-dokumentation der laver sig selv, mens du bygger." KS er et krav i de fleste byggesager — lav den løbende på telefonen i stedet for som aftenarbejde: tjekliste pr. fag og etape, tidsstemplede billeder inden konstruktionen lukkes, og én samlet KS-rapport som PDF pr. sag eller etape, klar til bygherre eller hovedentreprenør. Ubegrænset brugere, så hele sjakket kan dokumentere.
+
+### Rottespærre-servicerapport — <https://billederapport.dk/rottespaerre-servicerapport/>
+
+Til kloakmestre og kloak-/rotteservice. "Servicekontrollen dokumenteret, inden dækslet er lagt på." Fast tjekliste til servicekontrol af rottespærrer (rensning, klapfunktion, fastgørelse), billeder med tidsstempel før/efter, og en færdig PDF-servicerapport til kunden og evt. boligforening/administrator i samme afsendelse. Historik pr. adresse til næste kontrol. Siden viser det rigtige eksempel på rapporten (rottespærre-servicekontrol, 3 sider, PDF).
