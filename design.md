@@ -311,6 +311,21 @@ Adjacent full-width sections must alternate background between `--bg` and `--sur
 - **Feature card body:** ≤ 30 words. Watch this when adding cards — the longest current card ("Før og efter-billeder") is at the ceiling.
 - **CTA button label:** ≤ 4 words. Use a verb. No "Click here" / "Learn more".
 
+### Analytics events (Umami)
+
+Conversion tracking is declarative via `data-umami-event` (+ `data-umami-event-*` props) — no extra script for links/buttons. The one scripted exception is FAQ opens (a tiny `toggle`-listener, guarded on `window.umami`). Current events; follow the same names/props when adding sections or pages:
+
+| Event | Props | Where |
+| --- | --- | --- |
+| `signup-click` | `placement`: `nav` \| `hero` \| `pricing` \| `cta-bottom` \| `footer` | Every link to `app.billederapport.dk/signup` |
+| `open-app-click` | `placement`: `cta-bottom` \| `footer` | Links to the app root |
+| `report-preview-click` | `placement`: `hero` | Hero ghost CTA anchoring to `#rapport` |
+| `report-pdf-download` | — | The example-report PDF button |
+| `device-toggle` | `device`: `mobile` \| `tablet` \| `desktop` | Screenshot gallery toggle |
+| `faq-open` | `question`: the question text | Every `.faq-item` (scripted) |
+
+Rules: every new signup/open-app link must carry the event + a `placement` prop; reuse existing event names across pages (funnels are cross-page); never add a new analytics vendor or move tracking into inline `onclick`.
+
 ### Things to never do on this site
 
 - Add a hamburger menu. Nav has four items — they fit, and a hamburger on a 5-link nav is admitting defeat.

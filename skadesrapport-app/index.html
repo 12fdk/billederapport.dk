@@ -1383,7 +1383,7 @@ button {
         </nav>
 
         <div class="nav-actions">
-          <a class="btn btn-ghost" href="https://app.billederapport.dk/signup">Prøv gratis</a>
+          <a class="btn btn-ghost" href="https://app.billederapport.dk/signup" data-umami-event="signup-click" data-umami-event-placement="nav">Prøv gratis</a>
         </div>
       </div>
     </header>
@@ -1413,10 +1413,10 @@ button {
             </p>
 
             <div class="cta-row">
-              <a class="btn btn-primary btn-lg" href="https://app.billederapport.dk/signup">
+              <a class="btn btn-primary btn-lg" href="https://app.billederapport.dk/signup" data-umami-event="signup-click" data-umami-event-placement="hero">
                 Prøv gratis i 14 dage
               </a>
-              <a class="btn btn-ghost btn-lg" href="/#rapport">
+              <a class="btn btn-ghost btn-lg" href="/#rapport" data-umami-event="report-preview-click" data-umami-event-placement="hero">
                 Se eksempel-rapporten
               </a>
             </div>
@@ -1994,7 +1994,7 @@ button {
                 <li>PDF til kunde, selskab og taksator</li>
                 <li>Databehandleraftale og dansk support</li>
               </ul>
-              <a class="btn btn-primary btn-block" href="https://app.billederapport.dk/signup">
+              <a class="btn btn-primary btn-block" href="https://app.billederapport.dk/signup" data-umami-event="signup-click" data-umami-event-placement="pricing">
                 Start 14 dages prøve
               </a>
               <p class="plan-foot">Priser ekskl. moms. Opsig når du vil.</p>
@@ -2108,10 +2108,10 @@ button {
             kreditkort. 14 dage på huset.
           </p>
           <div class="cta-row cta-row-centered">
-            <a class="btn btn-primary btn-lg" href="https://app.billederapport.dk/signup">
+            <a class="btn btn-primary btn-lg" href="https://app.billederapport.dk/signup" data-umami-event="signup-click" data-umami-event-placement="cta-bottom">
               Opret konto gratis
             </a>
-            <a class="btn btn-ghost btn-lg" href="https://app.billederapport.dk" target="_blank" rel="noopener">
+            <a class="btn btn-ghost btn-lg" href="https://app.billederapport.dk" target="_blank" rel="noopener" data-umami-event="open-app-click" data-umami-event-placement="cta-bottom">
               Åbn app.billederapport.dk →
             </a>
           </div>
@@ -2146,9 +2146,9 @@ button {
 
         <nav class="footer-col" aria-label="App">
           <h3>App</h3>
-          <a href="https://app.billederapport.dk" target="_blank" rel="noopener">Åbn app</a>
+          <a href="https://app.billederapport.dk" target="_blank" rel="noopener" data-umami-event="open-app-click" data-umami-event-placement="footer">Åbn app</a>
           <a href="https://app.billederapport.dk/login">Log ind</a>
-          <a href="https://app.billederapport.dk/signup">Opret konto</a>
+          <a href="https://app.billederapport.dk/signup" data-umami-event="signup-click" data-umami-event-placement="footer">Opret konto</a>
         </nav>
 
         <nav class="footer-col" aria-label="Produkt">
@@ -2174,6 +2174,15 @@ button {
 
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
+
+      // FAQ open tracking (Umami)
+      document.querySelectorAll('.faq-item').forEach(function (item) {
+        item.addEventListener('toggle', function () {
+          if (!item.open || !window.umami) return;
+          var q = item.querySelector('.faq-q');
+          window.umami.track('faq-open', { question: q ? q.textContent.trim() : '' });
+        });
+      });
     </script>
     <script defer src="https://umami.robert-jensen.dk/script.js" data-website-id="39882bf2-3493-429b-bb09-25e00528822a"></script>
   </body>
