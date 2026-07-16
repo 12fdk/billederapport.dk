@@ -171,7 +171,7 @@ Phone mock uses a custom `44px` outer / `32px` inner radius.
 
 - **Logos:** `assets/logo/logo-color.svg` for light, `assets/logo/logo-dark.svg` for dark. Both 36×36 in nav, 28×28 in footer.
 - **Favicon:** `/favicon.ico` (multi-size), 32px PNG and Apple touch icon (180px) for iOS install.
-- **OG card:** `assets/og/og-card.png`, 1200×630.
+- **OG cards:** `assets/og/og-card.png` (front page + legal), 1200×630, plus one `og-<slug>.png` per vertical page — captured from the page's own hero at a 1200×646 viewport, center-cropped to 1200×630 (headless browser screenshot). Recapture a page's card when its hero changes.
 - **Photo mock:** drawn entirely in CSS (gradient slab + SVG annotations). Do not swap for a raster image — it would regress LCP and add weight.
 
 ## Accessibility
@@ -289,7 +289,7 @@ Use `:focus-visible`, not `:focus`, so mouse clicks don't strobe the ring.
 
 - **No raster decoration.** The phone mock and all icons are SVG/CSS so the page stays under one HTTP roundtrip + the font. If a hero photo is ever added, it must use `loading="eager"` + `fetchpriority="high"` + AVIF/WebP, sized to the actual layout (no 4000px sources).
 - **No popups, ever.** No newsletter modal, cookie banner overlay, intent-exit prompt. The site is single-purpose; interruption kills trust. (The analytics tag is Umami, which doesn't need a cookie banner under GDPR — keep it that way.)
-- **OG card and favicons** are the only raster assets the marketing surface ships. Don't add more.
+- **OG cards and favicons** are the only raster assets the marketing surface ships (plus the screenshot/report images that ARE the content). Don't add raster decoration.
 
 ### Contrast & accessibility floor
 
