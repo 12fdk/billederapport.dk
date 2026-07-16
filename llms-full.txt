@@ -12,7 +12,7 @@
 
 ## Hero
 
-**Kvalitetsrapporter, direkte på telefonen, mens du er hos kunden.**
+**Færdig fotorapport på telefonen, inden du forlader kunden.**
 
 Uanset om du inspicerer, dokumenterer skader eller laver tilsyn — tag billeder, tilføj noter, og send en færdig PDF-rapport til kunden på få minutter. Også når der ikke er dækning.
 
@@ -23,15 +23,15 @@ Uanset om du inspicerer, dokumenterer skader eller laver tilsyn — tag billeder
 CTAs:
 
 - Prøv gratis i 14 dage: <https://app.billederapport.dk/signup>
-- Åbn appen: <https://app.billederapport.dk>
+- Se eksempel-rapporten: <https://billederapport.dk/#rapport>
 
 ## Bruges til
 
-Bruges til alle slags inspektioner og dokumentation — ejendom, skader & forsikring, byggeri, service & vedligehold, rådgivning & tilsyn.
+Bruges af håndværkere, inspektører og servicefirmaer — til ejendom, skader & forsikring, byggeri, service & vedligehold, rådgivning & tilsyn.
 
 ## Funktioner
 
-Alt du skal bruge — intet du ikke skal bruge. Lavet sammen med folk der laver rapporter til daglig. Intet unødigt fedt. En simpel løsning, der gør én ting — men gør det godt: laver pæne rapporter til dine kunder med dine oplysninger, sparer dig tid, og giver kunderne et mere professionelt indtryk af dig.
+Alt du skal bruge — intet du ikke skal bruge. Lavet sammen med håndværkere og inspektører, der laver rapporter til daglig. Intet unødigt fedt. En simpel løsning, der gør én ting — men gør det godt: laver pæne rapporter til dine kunder med dine oplysninger, sparer dig tid, og giver kunderne et mere professionelt indtryk af dig.
 
 - **Foto med annotering** — tag billeder direkte fra telefonen. Tegn cirkler, pile og tekst oven på, og tidsstemplet brændes ind i billedet.
 - **Offline-klar** — alt gemmes lokalt og synkroniseres automatisk når du er online igen.
