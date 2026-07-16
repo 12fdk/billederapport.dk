@@ -157,8 +157,9 @@ Phone mock uses a custom `44px` outer / `32px` inner radius.
 - Same button pair as the hero (primary + ghost).
 
 ### Footer
-- `--surface-2` background, three columns above `680px` (brand col is `1.4fr`, then two `1fr` link cols).
-- Footer-bottom band separated by a border, `0.825rem` text — copyright left, "Hostet i EU · GDPR-venlig" right.
+- `--surface-2` background, four columns above `680px` (brand col is `1.4fr`, then three `1fr` link cols: App, Produkt, Løsninger).
+- Brand column carries the legal identity (`.footer-org`): "12F ApS · CVR 45362957" + `mailto:support@billederapport.dk`. Keep this on every page.
+- Footer-bottom band separated by a border, `0.825rem` text — copyright left; Privatlivspolitik · Handelsbetingelser · "Hostet i EU · GDPR-venlig" right.
 
 ## Iconography
 

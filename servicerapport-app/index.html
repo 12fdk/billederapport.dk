@@ -1119,6 +1119,26 @@ button {
   gap: 0.5rem;
   font-size: 0.825rem;
 }
+.footer-org {
+  margin-top: 0.75rem;
+  color: var(--text-muted);
+}
+.footer-org a {
+  color: var(--text-muted);
+}
+.footer-org a:hover,
+.footer-bottom a:hover {
+  color: var(--text);
+}
+.footer-bottom a {
+  color: var(--text-muted);
+}
+.footer-org a:focus-visible,
+.footer-bottom a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--ring);
+  border-radius: 6px;
+}
 
 /* ---------- Motion ---------- */
 @media (prefers-reduced-motion: reduce) {
@@ -1224,6 +1244,14 @@ button {
           "image": "https://billederapport.dk/assets/og/og-card.png",
           "description": "Dansk-udviklet mobil app til fotorapporter, inspektioner og skadesdokumentation. Offline-klar, GDPR-venlig og hostet i EU.",
           "areaServed": { "@type": "Country", "name": "DK" },
+          "legalName": "12F ApS",
+          "vatID": "DK45362957",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "email": "support@billederapport.dk",
+            "availableLanguage": "da"
+          },
           "sameAs": []
         },
         {
@@ -2145,6 +2173,10 @@ button {
           <p class="footer-tag">
             Fotorapporter direkte på telefonen — offline-klar og nem at dele.
           </p>
+          <p class="footer-org">
+            12F ApS · CVR 45362957<br />
+            <a href="mailto:support@billederapport.dk">support@billederapport.dk</a>
+          </p>
         </div>
 
         <nav class="footer-col" aria-label="App">
@@ -2174,7 +2206,11 @@ button {
 
       <div class="container footer-bottom">
         <span>© <span id="year">2026</span> Billederapport. Alle rettigheder forbeholdes.</span>
-        <span>Hostet i EU · GDPR-venlig</span>
+        <span>
+          <a href="/privatlivspolitik/">Privatlivspolitik</a> ·
+          <a href="/handelsbetingelser/">Handelsbetingelser</a> ·
+          Hostet i EU · GDPR-venlig
+        </span>
       </div>
     </footer>
 

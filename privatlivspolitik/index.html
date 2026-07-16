@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#F5F1EA" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0E1520" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+
+    <title>Privatlivspolitik | Billederapport</title>
+    <meta
+      name="description"
+      content="Privatlivspolitik for Billederapport og billederapport.dk. Sådan behandler 12F ApS dine data — hvad vi indsamler, hvorfor, hvor længe, og hvilke rettigheder du har."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="da_DK" />
+    <meta property="og:title" content="Privatlivspolitik | Billederapport" />
+    <meta property="og:description" content="Sådan behandler 12F ApS dine data i Billederapport — hvad vi indsamler, hvorfor, hvor længe, og hvilke rettigheder du har." />
+    <meta property="og:url" content="https://billederapport.dk/privatlivspolitik/" />
+    <meta property="og:site_name" content="Billederapport" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/assets/logo/logo-color.svg" media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/svg+xml" href="/assets/logo/logo-dark.svg" media="(prefers-color-scheme: dark)" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+
+    <link rel="canonical" href="https://billederapport.dk/privatlivspolitik/" />
+    <link rel="alternate" hreflang="da-DK" href="https://billederapport.dk/privatlivspolitik/" />
+    <link rel="alternate" hreflang="x-default" href="https://billederapport.dk/privatlivspolitik/" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Billederapport" />
+    <meta name="publisher" content="Billederapport" />
+
+    <link rel="preload" href="/assets/fonts/InterVariable-v2.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="dns-prefetch" href="https://app.billederapport.dk" />
+    <link rel="dns-prefetch" href="https://umami.robert-jensen.dk" />
+    <style>
+@font-face {
+  font-family: 'InterVariable';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/assets/fonts/InterVariable-v2.woff2') format('woff2-variations');
+}
+
+/* ---------- Tokens ---------- */
+:root {
+  --ink: #1a2332;
+  --ink-soft: #3a4657;
+  --ink-muted: #677184;
+  --paper: #f5f1ea;
+  --paper-soft: #faf6ef;
+  --paper-strong: #ece6db;
+  --accent: #e8833a;
+  --accent-strong: #d37128;
+  --accent-text: #b5541e;
+  --accent-soft: #fff2e6;
+  --dark-bg: #0e1520;
+  --dark-surface: #141c2a;
+  --dark-surface-2: #1c2637;
+  --dark-border: #27344a;
+  --ring: rgba(232, 131, 58, 0.35);
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 18px;
+  --radius-xl: 26px;
+  --shadow-sm: 0 1px 2px rgba(26, 35, 50, 0.06), 0 2px 6px rgba(26, 35, 50, 0.05);
+  --shadow: 0 4px 14px rgba(26, 35, 50, 0.08), 0 20px 40px rgba(26, 35, 50, 0.08);
+  --bg: var(--paper);
+  --surface: #ffffff;
+  --surface-2: var(--paper-soft);
+  --text: var(--ink);
+  --text-muted: var(--ink-muted);
+  --border: rgba(26, 35, 50, 0.1);
+  --font-sans:
+    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    --font-sans:
+      'InterVariable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      Helvetica, Arial, sans-serif;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: var(--dark-bg);
+    --surface: var(--dark-surface);
+    --surface-2: var(--dark-surface-2);
+    --text: #eef1f6;
+    --text-muted: #8b97ad;
+    --border: var(--dark-border);
+    --paper-strong: #1c2637;
+    --accent-soft: rgba(232, 131, 58, 0.14);
+    --accent-text: #e8833a;
+  }
+}
+
+/* ---------- Reset ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px;
+}
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'cv11', 'ss01', 'ss03';
+}
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+a {
+  color: inherit;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  line-height: 1.15;
+}
+h1 {
+  font-size: clamp(1.9rem, 1.6vw + 1.4rem, 2.8rem);
+  letter-spacing: -0.028em;
+}
+h2 {
+  font-size: 1.35rem;
+}
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skip-link {
+  position: fixed;
+  left: 0;
+  top: -40px;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0 0 8px 0;
+  z-index: 100;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* ---------- Layout ---------- */
+.container {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 2vw, 2rem);
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  height: 44px;
+  padding: 0 1.1rem;
+  border-radius: var(--radius);
+  font-size: 0.975rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition:
+    transform 0.08s ease,
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+  white-space: nowrap;
+}
+.btn:active {
+  transform: scale(0.985);
+}
+.btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--ring);
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--text);
+  border-color: var(--border);
+}
+.btn-ghost:hover {
+  background: var(--surface-2);
+}
+
+.brand:focus-visible,
+.nav-links a:focus-visible,
+.footer-col a:focus-visible,
+.footer-bottom a:focus-visible,
+.legal a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--ring);
+  border-radius: 6px;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: color-mix(in srgb, var(--bg) 85%, transparent);
+  backdrop-filter: saturate(1.2) blur(14px);
+  -webkit-backdrop-filter: saturate(1.2) blur(14px);
+  border-bottom: 1px solid var(--border);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  gap: 1rem;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+.brand-name {
+  font-size: 1.0625rem;
+}
+.brand-mark {
+  border-radius: 8px;
+}
+.brand-mark-dark {
+  display: none;
+}
+@media (prefers-color-scheme: dark) {
+  .brand-mark-light {
+    display: none;
+  }
+  .brand-mark-dark {
+    display: block;
+  }
+}
+.nav-links {
+  display: none;
+  gap: clamp(0.3rem, 0.8vw, 1.5rem);
+  font-size: clamp(0.8125rem, 0.3vw + 0.7rem, 0.95rem);
+}
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-weight: 500;
+  white-space: nowrap;
+}
+.nav-links a:hover {
+  color: var(--text);
+}
+.nav-actions {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 760px) {
+  .nav-links {
+    display: flex;
+  }
+}
+@media (max-width: 399px) {
+  .brand-name {
+    display: none;
+  }
+  .btn {
+    padding: 0 0.85rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* ---------- Breadcrumbs ---------- */
+.crumbs {
+  padding: 1rem clamp(1rem, 2vw, 2rem) 0;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+.crumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+.crumbs a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+.crumbs a:hover {
+  color: var(--text);
+}
+.crumbs-sep {
+  opacity: 0.6;
+}
+.crumbs [aria-current='page'] {
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* ---------- Legal prose ---------- */
+.legal {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: clamp(2.5rem, 5vw, 4rem) 0 clamp(4rem, 8vw, 6rem);
+}
+.legal-updated {
+  margin-top: 0.75rem;
+  color: var(--text-muted);
+  font-size: 0.925rem;
+}
+.legal h2 {
+  margin: 2.5rem 0 0.75rem;
+}
+.legal p {
+  margin: 0 0 1rem;
+  max-width: 68ch;
+  line-height: 1.65;
+  color: var(--text);
+}
+.legal p + p {
+  margin-top: 0;
+}
+.legal ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0 0 1rem;
+  max-width: 66ch;
+  line-height: 1.65;
+  display: grid;
+  gap: 0.35rem;
+}
+.legal a {
+  color: var(--accent-text);
+}
+.legal .legal-lede {
+  color: var(--text-muted);
+  font-size: 1.0625rem;
+  margin-top: 1rem;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: var(--surface-2);
+  border-top: 1px solid var(--border);
+  padding: 3rem 0 1.25rem;
+  color: var(--text-muted);
+  font-size: 0.925rem;
+}
+.footer-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 680px) {
+  .footer-grid {
+    grid-template-columns: 1.4fr repeat(3, 1fr);
+  }
+}
+.footer-tag {
+  margin-top: 0.75rem;
+  max-width: 36ch;
+  color: var(--text-muted);
+}
+.footer-org {
+  margin-top: 0.75rem;
+  color: var(--text-muted);
+}
+.footer-org a {
+  color: var(--text-muted);
+}
+.footer-org a:hover {
+  color: var(--text);
+}
+.footer-col {
+  display: grid;
+  gap: 0.5rem;
+  align-content: start;
+}
+.footer-col h3 {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin: 0 0 0.3rem;
+  font-weight: 700;
+}
+.footer-col a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+.footer-col a:hover {
+  color: var(--text);
+}
+.footer-bottom {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.825rem;
+}
+.footer-bottom a {
+  color: var(--text-muted);
+}
+.footer-bottom a:hover {
+  color: var(--text);
+}
+
+/* ---------- Motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.001ms !important;
+    animation-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Spring til indhold</a>
+
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="/" aria-label="Billederapport — forside">
+          <img
+            src="/assets/logo/logo-color.svg"
+            alt=""
+            width="36"
+            height="36"
+            class="brand-mark brand-mark-light"
+          />
+          <img
+            src="/assets/logo/logo-dark.svg"
+            alt=""
+            width="36"
+            height="36"
+            class="brand-mark brand-mark-dark"
+          />
+          <span class="brand-name">Billederapport</span>
+        </a>
+
+        <nav aria-label="Hovedmenu" class="nav-links">
+          <a href="/#features">Funktioner</a>
+          <a href="/#how">Sådan virker det</a>
+          <a href="/#pricing">Pris</a>
+          <a href="/#faq">FAQ</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="btn btn-ghost" href="https://app.billederapport.dk/signup" data-umami-event="signup-click" data-umami-event-placement="nav">Prøv gratis</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <nav class="container crumbs" aria-label="Brødkrummer">
+        <ol>
+          <li><a href="/">Forside</a></li>
+          <li class="crumbs-sep" aria-hidden="true">/</li>
+          <li aria-current="page">Privatlivspolitik</li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <article class="legal">
+          <h1>Privatlivspolitik</h1>
+          <p class="legal-updated">Senest opdateret: 16. juli 2026</p>
+
+          <p class="legal-lede">
+            Kort version: dine rapporter, billeder og kundedata tilhører dig.
+            Vi hoster alt i EU, vi sælger ikke data, og du kan eksportere
+            eller slette det hele når som helst.
+          </p>
+
+          <h2>Hvem er vi</h2>
+          <p>
+            Billederapport drives af 12F ApS, CVR 45362957 — et dansk
+            softwarefirma. Vi er dataansvarlige for de oplysninger, der er
+            beskrevet i denne politik. Har du spørgsmål, kan du altid skrive
+            til <a href="mailto:support@billederapport.dk">support@billederapport.dk</a>.
+          </p>
+
+          <h2>Hjemmesiden (billederapport.dk)</h2>
+          <p>
+            På denne hjemmeside bruger vi Umami til besøgsstatistik. Umami er
+            et privatlivsvenligt analyseværktøj, der ikke bruger cookies og
+            ikke gemmer personoplysninger — vi kan se, hvor mange der besøger
+            siden og hvilke knapper der bliver brugt, men ikke hvem du er.
+            Derfor møder du heller ikke et cookie-banner her.
+          </p>
+
+          <h2>Når du opretter en konto</h2>
+          <p>Opretter du en konto i appen, behandler vi:</p>
+          <ul>
+            <li>Navn og e-mailadresse på dig og de kolleger, du inviterer.</li>
+            <li>Firmaoplysninger: firmanavn, CVR, adresse, logo og kontaktoplysninger til brug i dine rapporter.</li>
+            <li>Betalings- og abonnementsoplysninger, når du tegner abonnement.</li>
+          </ul>
+          <p>
+            Det gør vi for at kunne levere tjenesten til dig
+            (databeskyttelsesforordningens art. 6, stk. 1, litra b — opfyldelse
+            af aftalen) og for at kunne fakturere korrekt (retlig forpligtelse,
+            litra c).
+          </p>
+
+          <h2>Indholdet i dine rapporter</h2>
+          <p>
+            Billeder, rapporter, tjeklister og oplysninger om dine kunder er
+            dit indhold. Her er du dataansvarlig, og vi er databehandler — vi
+            behandler kun indholdet for at levere tjenesten og efter din
+            instruks. Der indgås databehandleraftale ved oprettelse af
+            firma-konto. Vi læser ikke dit indhold, sælger det ikke og bruger
+            det ikke til at træne AI-modeller.
+          </p>
+
+          <h2>Hvor dine data ligger</h2>
+          <p>
+            Alle data og billeder hostes hos EU-baserede leverandører. Vi
+            bruger et lille antal underleverandører til hosting og
+            e-mail-udsendelse; de er alle underlagt databehandleraftaler.
+            Listen over underleverandører kan altid rekvireres via
+            <a href="mailto:support@billederapport.dk">support@billederapport.dk</a>.
+          </p>
+
+          <h2>Hvor længe vi gemmer dine data</h2>
+          <ul>
+            <li>Så længe du har en aktiv konto eller prøveperiode.</li>
+            <li>365 dage efter dit abonnement er udløbet, så du har god tid til at hente dine rapporter og billeder.</li>
+            <li>Bogføringsmateriale gemmes i 5 år efter regnskabsårets udløb, som bogføringsloven kræver.</li>
+          </ul>
+          <p>
+            Du kan til enhver tid selv eksportere eller slette alle dine data
+            fra kontoen med ét klik.
+          </p>
+
+          <h2>Dine rettigheder</h2>
+          <p>
+            Du har ret til indsigt i, berigtigelse af og sletning af dine
+            personoplysninger, ret til dataportabilitet og ret til at gøre
+            indsigelse mod behandlingen. Skriv til
+            <a href="mailto:support@billederapport.dk">support@billederapport.dk</a>,
+            så hjælper vi. Du kan også klage til Datatilsynet
+            (<a href="https://www.datatilsynet.dk" rel="noopener">datatilsynet.dk</a>),
+            hvis du mener, vi behandler dine oplysninger forkert.
+          </p>
+
+          <h2>Ændringer</h2>
+          <p>
+            Ændrer vi denne politik væsentligt, giver vi besked pr. e-mail
+            eller i appen. Den nyeste version ligger altid på denne side.
+          </p>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="/" aria-label="Billederapport">
+            <img
+              src="/assets/logo/logo-color.svg"
+              alt=""
+              width="28"
+              height="28"
+              class="brand-mark brand-mark-light"
+            />
+            <img
+              src="/assets/logo/logo-dark.svg"
+              alt=""
+              width="28"
+              height="28"
+              class="brand-mark brand-mark-dark"
+            />
+            <span class="brand-name">Billederapport</span>
+          </a>
+          <p class="footer-tag">
+            Fotorapporter direkte på telefonen — offline-klar og nem at dele.
+          </p>
+          <p class="footer-org">
+            12F ApS · CVR 45362957<br />
+            <a href="mailto:support@billederapport.dk">support@billederapport.dk</a>
+          </p>
+        </div>
+
+        <nav class="footer-col" aria-label="App">
+          <h3>App</h3>
+          <a href="https://app.billederapport.dk" target="_blank" rel="noopener" data-umami-event="open-app-click" data-umami-event-placement="footer">Åbn app</a>
+          <a href="https://app.billederapport.dk/login">Log ind</a>
+          <a href="https://app.billederapport.dk/signup" data-umami-event="signup-click" data-umami-event-placement="footer">Opret konto</a>
+        </nav>
+
+        <nav class="footer-col" aria-label="Produkt">
+          <h3>Produkt</h3>
+          <a href="/">Forside</a>
+          <a href="/#features">Funktioner</a>
+          <a href="/#how">Sådan virker det</a>
+          <a href="/#pricing">Pris</a>
+          <a href="/#faq">FAQ</a>
+        </nav>
+
+        <nav class="footer-col" aria-label="Løsninger">
+          <h3>Løsninger</h3>
+          <a href="/skadesrapport-app/">Skadesrapport-app</a>
+          <a href="/servicerapport-app/">Servicerapport-app</a>
+          <a href="/ks-dokumentation/">KS-dokumentation</a>
+          <a href="/rottespaerre-servicerapport/">Rottespærre-service</a>
+        </nav>
+      </div>
+
+      <div class="container footer-bottom">
+        <span>© <span id="year">2026</span> Billederapport. Alle rettigheder forbeholdes.</span>
+        <span>
+          <a href="/privatlivspolitik/" aria-current="page">Privatlivspolitik</a> ·
+          <a href="/handelsbetingelser/">Handelsbetingelser</a> ·
+          Hostet i EU · GDPR-venlig
+        </span>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script defer src="https://umami.robert-jensen.dk/script.js" data-website-id="39882bf2-3493-429b-bb09-25e00528822a"></script>
+  </body>
+</html>
