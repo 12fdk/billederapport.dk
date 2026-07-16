@@ -209,3 +209,15 @@ Til kvalitetssikring i byggeriet: tømrer, murer, VVS, el, entreprise. "KS-dokum
 ### Rottespærre-servicerapport — <https://billederapport.dk/rottespaerre-servicerapport/>
 
 Til kloakmestre og kloak-/rotteservice. "Servicekontrollen dokumenteret, inden dækslet er lagt på." Fast tjekliste til servicekontrol af rottespærrer (rensning, klapfunktion, fastgørelse), billeder med tidsstempel før/efter, og en færdig PDF-servicerapport til kunden og evt. boligforening/administrator i samme afsendelse. Historik pr. adresse til næste kontrol. Siden viser det rigtige eksempel på rapporten (rottespærre-servicekontrol, 3 sider, PDF).
+
+### Inspektionsrapport-app — <https://billederapport.dk/inspektionsrapport-app/>
+
+Til bygningssagkyndige, ejendomsinspektører og rådgivende inspektører. Faste skabeloner pr. inspektionstype (bygningsgennemgang, flyttesyn, årsgennemgang) sikrer ensartet kvalitet, uanset hvem der inspicerer. Billeddokumentation med tidsstempel pr. punkt, historik pr. ejendom, og en branded PDF til boligejer, køber eller administrator — sendt samme dag. Billederapport er til fri inspektions- og fotodokumentation og erstatter ikke huseftersynsordningens lovregulerede tilstandsrapport.
+
+### Byggetilsyn-app — <https://billederapport.dk/byggetilsyn-app/>
+
+Til byggeledere, tilsynsfolk og bygherrerådgivere. Tilsyn pr. fag og etape, mangellister med foto og tidsstempel, før/efter-billeder af udbedringer, og én branded PDF til entreprenør, bygherre og rådgiver i samme afsendelse. Dokumentationen ligger pr. sag og kan genbruges ved aflevering samt 1- og 5-årsgennemgang. Virker offline i råhuse og kældre.
+
+### Fotodokumentation til håndværkere — <https://billederapport.dk/fotodokumentation-haandvaerker/>
+
+Til håndværkere og servicemontører i alle fag (VVS, el, tømrer, murer, maler, kloak, tag). Før/efter-billeder af udført arbejde med tidsstempel, to linjers note, og en pæn PDF med firmaets logo som kvittering til kunden — færdig før bilen starter. Anmeldelses-link og QR-kode i bunden af hver rapport gør tilfredse kunder til anmeldelser. Ingen aften-administration.

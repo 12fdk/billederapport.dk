@@ -20,6 +20,9 @@
 - [Servicerapport-app (Danish)](https://billederapport.dk/servicerapport-app/): Use-case page for service & maintenance technicians (HVAC, heat pumps, ventilation, gate service) — per-asset checklists, photos of completed work, instant PDF receipt to the customer.
 - [KS-dokumentation (Danish)](https://billederapport.dk/ks-dokumentation/): Use-case page for quality-assurance (KS) documentation in Danish construction — per-trade checklists, timestamped photos before closing constructions, one consolidated KS report as PDF.
 - [Rottespærre-servicerapport (Danish)](https://billederapport.dk/rottespaerre-servicerapport/): Use-case page for sewer contractors doing rat-barrier service checks — fixed service checklist, before/after photos, PDF to customer and property administrator.
+- [Inspektionsrapport-app (Danish)](https://billederapport.dk/inspektionsrapport-app/): Use-case page for building inspectors and property surveyors — per-inspection-type templates, consistent checklists, photo documentation, branded PDF to owner or administrator.
+- [Byggetilsyn-app (Danish)](https://billederapport.dk/byggetilsyn-app/): Use-case page for construction supervisors and client advisors — per-trade site inspections, photo defect lists (mangelliste), one PDF to contractor and client.
+- [Fotodokumentation til håndværkere (Danish)](https://billederapport.dk/fotodokumentation-haandvaerker/): Use-case page for tradespeople — before/after photos of completed work, branded PDF receipt to the customer, built-in review link.
 - [Web app](https://app.billederapport.dk): The Billederapport application — sign in or start the 14-day trial.
 - [Sign up](https://app.billederapport.dk/signup): Start a 14-day free trial without a credit card.
 - [Sign in](https://app.billederapport.dk/login): Sign in to an existing account.
