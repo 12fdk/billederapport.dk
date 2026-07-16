@@ -938,6 +938,18 @@ button {
 .why-list strong {
   color: var(--text);
 }
+.why-list a {
+  color: var(--accent-text);
+  text-decoration: none;
+}
+.why-list a:hover {
+  text-decoration: underline;
+}
+.why-list a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--ring);
+  border-radius: 6px;
+}
 
 /* ---------- Plans ---------- */
 .plans {
@@ -1987,6 +1999,9 @@ button {
                 af 12F ApS — vi er ikke ejet af en servicekæde eller en
                 grossist. Dine kunder og dine data går ikke videre til nogen i
                 din egen branche.
+              </li>
+              <li>
+                <strong>Også til skader og rottespærrer.</strong> Samme app laver <a href="/skadesrapport-app/">skadesrapporter</a> og <a href="/rottespaerre-servicerapport/">rottespærre-servicekontroller</a> — én pris for det hele.
               </li>
             </ul>
           </div>

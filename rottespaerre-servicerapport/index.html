@@ -938,6 +938,18 @@ button {
 .why-list strong {
   color: var(--text);
 }
+.why-list a {
+  color: var(--accent-text);
+  text-decoration: none;
+}
+.why-list a:hover {
+  text-decoration: underline;
+}
+.why-list a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--ring);
+  border-radius: 6px;
+}
 
 /* ---------- Report PDF showcase ---------- */
 .report-pages {
@@ -2033,6 +2045,9 @@ button {
                 <strong>Uafhængigt dansk firma.</strong> Billederapport drives af
                 12F ApS — vi er ikke ejet af en kæde eller en konkurrent i din
                 branche. Dine kunder og adresser bliver hos dig.
+              </li>
+              <li>
+                <strong>Også til resten af kloakarbejdet.</strong> Samme app laver <a href="/servicerapport-app/">servicerapporter</a> og <a href="/ks-dokumentation/">KS-dokumentation</a> — én pris for det hele.
               </li>
             </ul>
           </div>
