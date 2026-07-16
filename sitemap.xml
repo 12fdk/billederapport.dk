@@ -34,6 +34,18 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://billederapport.dk/ks-dokumentation/" />
   </url>
   <url>
+    <loc>https://billederapport.dk/privatlivspolitik/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://billederapport.dk/handelsbetingelser/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://billederapport.dk/rottespaerre-servicerapport/</loc>
     <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
