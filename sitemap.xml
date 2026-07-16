@@ -53,4 +53,28 @@
     <xhtml:link rel="alternate" hreflang="da-DK" href="https://billederapport.dk/rottespaerre-servicerapport/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://billederapport.dk/rottespaerre-servicerapport/" />
   </url>
+  <url>
+    <loc>https://billederapport.dk/inspektionsrapport-app/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://billederapport.dk/inspektionsrapport-app/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billederapport.dk/inspektionsrapport-app/" />
+  </url>
+  <url>
+    <loc>https://billederapport.dk/byggetilsyn-app/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://billederapport.dk/byggetilsyn-app/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billederapport.dk/byggetilsyn-app/" />
+  </url>
+  <url>
+    <loc>https://billederapport.dk/fotodokumentation-haandvaerker/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="da-DK" href="https://billederapport.dk/fotodokumentation-haandvaerker/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://billederapport.dk/fotodokumentation-haandvaerker/" />
+  </url>
 </urlset>
