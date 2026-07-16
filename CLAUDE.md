@@ -18,6 +18,7 @@ Match the tokens, components, spacing, voice and accessibility rules in `design.
 - Keep the page as a single HTML file with inline CSS. Do not split out a stylesheet or introduce a bundler.
 - Keep `lang="da"`. All user-facing copy in Danish.
 - Update `llms.txt`, `llms-full.txt`, `sitemap.xml`, and the JSON-LD `@graph` if you add/rename sections, change pricing, or update the FAQ.
+- Any PR that changes a page's content must bump that page's `<lastmod>` in `sitemap.xml` (and the WebPage `dateModified` in its JSON-LD, where present) to the merge date.
 - After any change, sanity-check both light and dark color schemes, and 360px / 760px / 1200px widths.
 
 ## Local preview
