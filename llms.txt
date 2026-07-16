@@ -17,6 +17,9 @@
 
 - [Marketing home (Danish)](https://billederapport.dk/): Product overview, features, how it works, pricing, FAQ.
 - [Skadesrapport-app (Danish)](https://billederapport.dk/skadesrapport-app/): Use-case page for damage assessment, insurance and skadesservice — timestamped photos, offline, branded PDF to customer and insurer.
+- [Servicerapport-app (Danish)](https://billederapport.dk/servicerapport-app/): Use-case page for service & maintenance technicians (HVAC, heat pumps, ventilation, gate service) — per-asset checklists, photos of completed work, instant PDF receipt to the customer.
+- [KS-dokumentation (Danish)](https://billederapport.dk/ks-dokumentation/): Use-case page for quality-assurance (KS) documentation in Danish construction — per-trade checklists, timestamped photos before closing constructions, one consolidated KS report as PDF.
+- [Rottespærre-servicerapport (Danish)](https://billederapport.dk/rottespaerre-servicerapport/): Use-case page for sewer contractors doing rat-barrier service checks — fixed service checklist, before/after photos, PDF to customer and property administrator.
 - [Web app](https://app.billederapport.dk): The Billederapport application — sign in or start the 14-day trial.
 - [Sign up](https://app.billederapport.dk/signup): Start a 14-day free trial without a credit card.
 - [Sign in](https://app.billederapport.dk/login): Sign in to an existing account.
