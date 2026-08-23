@@ -158,7 +158,7 @@ Phone mock uses a custom `44px` outer / `32px` inner radius.
 
 ### Footer
 - `--surface-2` background, four columns above `680px` (brand col is `1.4fr`, then three `1fr` link cols: App, Produkt, Løsninger).
-- Brand column carries the legal identity (`.footer-org`): "12F ApS · CVR 45362957" + `mailto:support@billederapport.dk`. Keep this on every page.
+- Brand column carries the legal identity (`.footer-org`): "12F ApS · CVR 45362957", the address, `mailto:support@billederapport.dk`, and a "Bygget af [12F.dk](https://www.12f.dk/)" credit line. Keep this on every page.
 - Footer-bottom band separated by a border, `0.825rem` text — copyright left; Privatlivspolitik · Handelsbetingelser · "Hostet i EU · GDPR-venlig" right.
 
 ## Iconography
