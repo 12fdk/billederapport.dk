@@ -8,14 +8,14 @@
     <meta name="color-scheme" content="light dark" />
 
     <title>Fotorapport-app til håndværkere og inspektører | Billederapport</title>
-    <meta name="description" content="Fotorapport-app til håndværkere og inspektører. Tag billeder, tilføj noter og send en færdig PDF til kunden — også uden dækning. Dansk og GDPR-venlig." />
+    <meta name="description" content="Slut med at samle billeder og skrive rapporter om aftenen. Lav fotorapporten færdig på telefonen hos kunden — også uden dækning. Dansk, GDPR og data i EU." />
 
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="da_DK" />
     <meta property="og:title" content="Fotorapport-app til håndværkere og inspektører | Billederapport" />
     <meta
       property="og:description"
-      content="Tag billeder, tilføj noter og send en færdig PDF-rapport til kunden. Offline-klar og mobil-først."
+      content="Slut med at skrive rapporter om aftenen. Lav fotorapporten færdig på telefonen hos kunden — også uden dækning."
     />
     <meta property="og:image" content="https://billederapport.dk/assets/og/og-card.png" />
     <meta property="og:image:width" content="1200" />
@@ -45,7 +45,7 @@
     <meta property="og:image:alt" content="Billederapport — fotorapport på telefonen med branded PDF" />
     <meta property="og:image:type" content="image/png" />
     <meta name="twitter:title" content="Fotorapport-app til håndværkere og inspektører | Billederapport" />
-    <meta name="twitter:description" content="Tag billeder, tilføj noter og send en færdig PDF-rapport til kunden. Offline-klar og mobil-først." />
+    <meta name="twitter:description" content="Slut med at skrive rapporter om aftenen. Lav fotorapporten færdig på telefonen hos kunden — også uden dækning." />
     <meta name="twitter:image:alt" content="Billederapport — fotorapport på telefonen med branded PDF" />
 
     <meta name="apple-mobile-web-app-title" content="Billederapport" />
@@ -1026,6 +1026,18 @@ button {
   border-bottom: 2px solid var(--accent);
   transform: rotate(-45deg);
 }
+.plan-promise {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+.plan-promise strong {
+  color: var(--text);
+}
 .plan-foot {
   margin-top: 0.85rem;
   font-size: 0.8rem;
@@ -1263,9 +1275,9 @@ button {
           "@id": "https://billederapport.dk/#webpage",
           "url": "https://billederapport.dk/",
           "name": "Fotorapport-app til håndværkere og inspektører",
-          "description": "Fotorapport-app til håndværkere og inspektører. Tag billeder, tilføj noter og send en færdig PDF til kunden — også uden dækning. Dansk og GDPR-venlig.",
+          "description": "Slut med at samle billeder og skrive rapporter om aftenen. Lav fotorapporten færdig på telefonen hos kunden — også uden dækning. Dansk, GDPR og data i EU.",
           "inLanguage": "da-DK",
-          "dateModified": "2026-08-23",
+          "dateModified": "2026-09-19",
           "isPartOf": { "@id": "https://billederapport.dk/#website" },
           "about": { "@id": "https://billederapport.dk/#app" },
           "primaryImageOfPage": "https://billederapport.dk/assets/og/og-card.png"
@@ -1639,7 +1651,7 @@ button {
       <!-- LOGO STRIP / SOCIAL PROOF -->
       <section class="strip" aria-label="Bruges til">
         <div class="container strip-inner">
-          <span class="strip-text">Bruges af håndværkere, inspektører og servicefirmaer</span>
+          <span class="strip-text">Dansk firma · Data i EU · Ikke ejet af nogen i din branche</span>
           <ul class="strip-icons">
             <li><a href="/inspektionsrapport-app/" aria-label="Inspektionsrapport-app til ejendom og bygningsinspektion">
               <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
@@ -2113,9 +2125,15 @@ button {
             <p class="eyebrow">Hvorfor Billederapport</p>
             <h2>Fordi du skal videre til næste opgave — ikke bruge aftenen på rapporter.</h2>
             <p class="section-lede">
-              Vi har bygget Billederapport sammen med folk der faktisk laver
-              rapporterne. Derfor er det først og fremmest en mobil-app — ikke
-              en desktop-ting man også kan bruge på telefonen.
+              Rapporten bliver sjældent lavet på stedet. Den bliver lavet klokken
+              21, når billederne skal findes frem i telefonen, og du ikke længere
+              kan huske hvilken revne der sad hvor.
+            </p>
+            <p class="section-lede">
+              Sådan har det været, fordi værktøjet var lavet til et skrivebord —
+              ikke til en tagfod. Vi har bygget Billederapport sammen med folk
+              der faktisk laver rapporterne, så det først og fremmest er en
+              mobil-app.
             </p>
 
             <ul class="why-list">
@@ -2139,6 +2157,11 @@ button {
               <li>
                 <strong>Dansk sprog og dansk support.</strong> Vi svarer på
                 dansk, og prisen er i DKK.
+              </li>
+              <li>
+                <strong>Uafhængigt dansk firma.</strong> Vi er ikke ejet af en
+                håndværker-, inspektions- eller forsikringsvirksomhed — så du
+                afleverer ikke dine kundedata til en konkurrent.
               </li>
             </ul>
           </div>
@@ -2546,9 +2569,14 @@ button {
                 <li>Dansk support</li>
               </ul>
               <a class="btn btn-primary btn-block" href="https://app.billederapport.dk/signup" data-umami-event="signup-click" data-umami-event-placement="pricing">
-                Start 14 dages prøve
+                Prøv gratis i 14 dage
               </a>
-              <p class="plan-foot">Priser ekskl. moms. Opsig når du vil.</p>
+              <p class="plan-promise">
+                <strong>Vores del af aftalen:</strong> Intet kort før du starter.
+                Ingen binding — opsig når du vil. Dine data er dine, og du kan
+                hente dem hjem med ét klik.
+              </p>
+              <p class="plan-foot">Priser ekskl. moms.</p>
             </article>
           </div>
         </div>
@@ -2835,11 +2863,15 @@ button {
         <div class="container cta-inner">
           <h2>Klar til at få rapporterne fra hånden?</h2>
           <p>
+            Hver uge du venter er endnu en aften med billeder i kamerarullen og
+            en rapport der skulle have været sendt i forgårs.
+          </p>
+          <p>
             Det tager under et minut at komme i gang.
           </p>
           <div class="cta-row cta-row-centered">
             <a class="btn btn-primary btn-lg" href="https://app.billederapport.dk/signup" data-umami-event="signup-click" data-umami-event-placement="cta-bottom">
-              Opret konto gratis
+              Prøv gratis i 14 dage
             </a>
             <a class="btn btn-ghost btn-lg" href="https://app.billederapport.dk" target="_blank" rel="noopener" data-umami-event="open-app-click" data-umami-event-placement="cta-bottom">
               Åbn app.billederapport.dk →
