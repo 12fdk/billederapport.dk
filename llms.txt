@@ -4,6 +4,7 @@
 
 ## Product summary
 
+- One-liner: Billederapport helps Danish tradespeople and inspectors who spend their evenings collecting photos and writing reports finish the report on the phone at the customer's site — so the working day ends when the last job does.
 - Audience: Danish tradespeople, building inspectors, surveyors, damage assessors, service technicians, sole-traders and small teams.
 - Core use cases: inspection reports, damage documentation (skadesrapport), oversight/tilsyn, service and maintenance reports, property condition reports.
 - Differentiators: works fully offline; EU/GDPR hosting; branded PDF emailed directly to the client; Danish-language UI and Danish-language support; no install (browser PWA); flat monthly price; unlimited reports/photos/templates/customers.

@@ -137,6 +137,7 @@ Phone mock uses a custom `44px` outer / `32px` inner radius.
 - Single plan (`.plans-single`, max 440px). The card is always "featured": tinted accent border + outer accent ring via dual shadow.
 - `.plan-amount` 2.5rem 800-weight, `.plan-unit` muted.
 - Checklist items prefixed by a CSS-drawn accent checkmark (rotated borders, no icon font).
+- `.plan-promise` sits between the CTA button and `.plan-foot`: a `--surface-2` block (16px padding, `--radius-sm`, `0.85rem`/1.65) holding the agreement plan — the commitments that remove purchase risk (no card up front, no lock-in, data export). `strong` inside it flips to `--text`. One per page; don't repeat it in the hero or the closing CTA.
 
 ### Screenshots gallery / carousel (`.carousel` + `.shots-grid`)
 - Sits between the **Why** section and **Pricing**, with `.section-alt` background.

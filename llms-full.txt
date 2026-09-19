@@ -2,6 +2,7 @@
 
 > Billederapport is a Danish-built mobile photo-report app for tradespeople, inspectors, surveyors, damage assessors and small field-service teams. Take photos on a phone, annotate them, fill in checklists, and send a branded PDF report to the customer by email — directly from the job site, including offline. Runs as a PWA in any modern browser; no app-store install required. Pricing is a single flat plan at 199 DKK/month with a 14-day free trial and no credit card required. Hosted in the EU and GDPR-compliant.
 
+- One-liner: Billederapport helps Danish tradespeople and inspectors who spend their evenings collecting photos and writing reports finish the report on the phone at the customer's site — so the working day ends when the last job does.
 - Marketing site: <https://billederapport.dk>
 - Web app: <https://app.billederapport.dk>
 - Pricing: 199 DKK / month, ex VAT. 14-day free trial. No credit card required. Cancel anytime.
@@ -27,7 +28,7 @@ CTAs:
 
 ## Bruges til
 
-Bruges af håndværkere, inspektører og servicefirmaer — til ejendom, skader & forsikring, byggeri, service & vedligehold, rådgivning & tilsyn.
+Dansk firma · Data i EU · Ikke ejet af nogen i din branche. Bruges af håndværkere, inspektører og servicefirmaer — til ejendom, skader & forsikring, byggeri, service & vedligehold, rådgivning & tilsyn.
 
 ## Funktioner
 
@@ -65,13 +66,14 @@ Otte skærmbilleder fra den rigtige app, taget på iPhone — fra start til afse
 
 ## Hvorfor Billederapport
 
-Fordi du skal videre til næste opgave — ikke bruge aftenen på rapporter. Vi har bygget Billederapport sammen med folk der faktisk laver rapporterne. Derfor er det først og fremmest en mobil-app — ikke en desktop-ting man også kan bruge på telefonen.
+Fordi du skal videre til næste opgave — ikke bruge aftenen på rapporter. Rapporten bliver sjældent lavet på stedet. Den bliver lavet klokken 21, når billederne skal findes frem i telefonen, og du ikke længere kan huske hvilken revne der sad hvor. Sådan har det været, fordi værktøjet var lavet til et skrivebord — ikke til en tagfod. Vi har bygget Billederapport sammen med folk der faktisk laver rapporterne, så det først og fremmest er en mobil-app.
 
 - **Mobil-først.** Designet til store handsker, kolde fingre og skarpt sollys.
 - **Ingen app-store.** Kør den i browseren eller installer den som app med ét tryk.
 - **Din branding.** Logo og kontaktoplysninger gennem hele rapporten.
 - **Anmeldelser indbygget.** Opret dit link til anmeldelser, og få det tilføjet til alle rapporter, så kunderne nemt kan give dig gode anmeldelser.
 - **Dansk sprog og dansk support.** Vi svarer på dansk, og prisen er i DKK.
+- **Uafhængigt dansk firma.** Vi er ikke ejet af en håndværker-, inspektions- eller forsikringsvirksomhed — så du afleverer ikke dine kundedata til en konkurrent.
 
 ## Rapporten
 
@@ -98,7 +100,9 @@ Eksempel-rapport (PDF, 3 sider, 2,6 MB): https://billederapport.dk/assets/report
 - PDF direkte på mail til kunden
 - Dansk support
 
-Priser ekskl. moms. Opsig når du vil. Start 14 dages prøve: <https://app.billederapport.dk/signup>
+Vores del af aftalen: Intet kort før du starter. Ingen binding — opsig når du vil. Dine data er dine, og du kan hente dem hjem med ét klik.
+
+Priser ekskl. moms. Prøv gratis i 14 dage: <https://app.billederapport.dk/signup>
 
 ## FAQ
 
