@@ -2071,7 +2071,7 @@ button {
     </script>
     <!-- Umami analytics: production-hostname guard — local dev (localhost/127.0.0.1/preview domains) never reports to the billederapport.dk production site. -->
 <script>
-(function(){var H="billederapport.dk",d=document;if(location.hostname===H||location.hostname==="www."+H){var s=d.createElement("script");s.src="https://umami.robert-jensen.dk/script.js";s.defer=true;s.dataset.websiteId="39882bf2-3493-429b-bb09-25e00528822a";d.head.appendChild(s);}})();
+(function(){var H="billederapport.dk",d=document;if(location.hostname===H||location.hostname==="www."+H){var s=d.createElement("script");s.src="https://umami.robert-jensen.dk/script.js";s.defer=true;s.dataset.websiteId="39882bf2-3493-429b-bb09-25e00528822a";s.dataset.performance="true";d.head.appendChild(s);}})();
 </script>
   </body>
 </html>
