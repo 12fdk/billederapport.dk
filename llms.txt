@@ -9,7 +9,7 @@
 - Core use cases: inspection reports, damage documentation (skadesrapport), oversight/tilsyn, service and maintenance reports, property condition reports.
 - Differentiators: works fully offline; EU/GDPR hosting; branded PDF emailed directly to the client; Danish-language UI and Danish-language support; no install (browser PWA); flat monthly price; unlimited reports/photos/templates/customers.
 - Platforms: any modern mobile browser (iOS Safari, Android Chrome) and desktop. Installable as a PWA.
-- Pricing: 199 DKK / month, ex VAT. 14-day free trial. No credit card required. Cancel anytime.
+- Pricing: 199 DKK / month, ex VAT, for the whole company with unlimited users. 14-day free trial. No credit card required. Cancel anytime.
 - Languages: Danish (primary). Support is in Danish.
 - Marketing site: https://billederapport.dk
 - Application: https://app.billederapport.dk
