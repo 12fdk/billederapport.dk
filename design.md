@@ -108,6 +108,7 @@ Phone mock uses a custom `44px` outer / `32px` inner radius.
 - Background uses two layered radial accent gradients (top-left bigger, top-right faint).
 - Right column is a **real framed iPhone screenshot** (`.phone` wraps a `<picture>` with AVIF + WebP). The phone is rotated `-2°`; the tilt flattens at `≤480px` and under `prefers-reduced-motion`. Drop-shadow comes from `filter: drop-shadow(...)` so the rounded phone frame casts a soft, frame-shaped shadow (not a rectangle).
 - The image is eager + `fetchpriority="high"` because it's the LCP element. Source PNGs (1350×2760, ~500 KB each) are pre-resized to 720px wide and encoded as AVIF (~26 KB) and WebP (~40 KB).
+- `.hero-price` sits directly under the hero `.cta-row` on `/` and every vertical page: one quiet line (`0.9rem`, `--text-muted`) with the price, users and trial — "**199 kr/md** ekskl. moms · ubegrænset antal brugere · 14 dage gratis, intet kreditkort". The price is a `strong` in `--text`; "ekskl. moms" is `.hero-price-vat` (`0.8rem`). Each fact is a `.hero-price-item` (`white-space: nowrap`) so the line only wraps between facts. Keep the facts identical to the pricing card and FAQ.
 - Trust points: bullet list with accent checkmark SVGs.
 
 ### Phone screenshot (`.phone`)

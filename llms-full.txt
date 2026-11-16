@@ -5,7 +5,7 @@
 - One-liner: Billederapport helps Danish tradespeople and inspectors who spend their evenings collecting photos and writing reports finish the report on the phone at the customer's site — so the working day ends when the last job does.
 - Marketing site: <https://billederapport.dk>
 - Web app: <https://app.billederapport.dk>
-- Pricing: 199 DKK / month, ex VAT. 14-day free trial. No credit card required. Cancel anytime.
+- Pricing: 199 DKK / month, ex VAT, for the whole company with unlimited users. 14-day free trial. No credit card required. Cancel anytime.
 - Languages: Danish (UI and support).
 - Hosting: EU. GDPR-compliant.
 
